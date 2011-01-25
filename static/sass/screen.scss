@@ -30,15 +30,15 @@ a {
     margin-left: 380px;
     background: #FFF;
     @include box-shadow(rgba(0,0,0,1) 0 0 3px);
-    @include border-top-left-radius(10px);
-    @include border-bottom-left-radius(10px);
+    @include border-top-left-radius(4px);
+    @include border-bottom-left-radius(4px);
     overflow: hidden;
 }
 
 #content-inner {
     border-left: 10px solid #eee;
     padding: 48px 86px;
-    width: 640px;
+    max-width: 640px;
 }
 
 #identity {

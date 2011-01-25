@@ -8,6 +8,14 @@ body {
     padding: 192px 0 48px 48px;
 }
 
+a {
+    text-decoration: none;
+    
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
 #header {
     position: fixed;
     margin-top: 48px;
@@ -38,7 +46,7 @@ body {
     
     #logo {
         font-size: 140px;
-        color: #2c2c2c;
+        color: #282828;
         position: relative;
         top: -117px;
         left: 200px;
@@ -51,16 +59,35 @@ h1 {
     font-weight: bold;
     letter-spacing: -1px;
     margin-top: 48px;
-    margin-bottom: 0.5em;
+    margin-bottom: 24px;
+    margin-left: -2px;
     
     &:first-child {
         margin-top: 0;
+    }
+    
+    a {
+        color: inherit;
     }
 }
 
 p, ul, ol, pre {
     line-height: 1.5;
     margin: 1em 0;
+}
+
+.post {
+    margin-bottom: 48px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.date {
+    margin-top: -24px;
+    font-size: 12px;
+    color: #999;
 }
 
 pre {

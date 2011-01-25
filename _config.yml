@@ -2,4 +2,4 @@ source:         .
 destination:    ./_site
 auto:           true
 server:         true
-exclude:        Icon.png, fabfile.py, config.rb, sass
+exclude:        Icon.png, fabfile.py, config.rb, sass, CNAME, CNAME.template, README

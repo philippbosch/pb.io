@@ -1,6 +1,10 @@
 @import "compass/reset";
 @import "compass/css3";
 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
 body {
     font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -10,6 +14,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #A5C261;
     
     &:hover {
         opacity: 0.5;
@@ -22,12 +27,18 @@ a {
 }
 
 #content {
-    margin-left: 420px;
+    margin-left: 380px;
     background: #FFF;
-    padding: 48px;
     @include box-shadow(rgba(0,0,0,1) 0 0 3px);
-    @include border-top-left-radius(4px);
-    @include border-bottom-left-radius(4px);
+    @include border-top-left-radius(10px);
+    @include border-bottom-left-radius(10px);
+    overflow: hidden;
+}
+
+#content-inner {
+    border-left: 10px solid #eee;
+    padding: 48px 86px;
+    width: 640px;
 }
 
 #identity {
@@ -35,6 +46,7 @@ a {
     
     .fn {
         font-size: 32px;
+        font-weight: bold;
         margin-left: -2px;
         margin-bottom: 0.15em;
         color: #FFF;
@@ -44,12 +56,16 @@ a {
         padding-bottom: 10px;
     }
     
+    .fn, .subline {
+        @include text-shadow(rgba(0,0,0,0.4) 1px 1px);
+    }
+    
     #logo {
         font-size: 140px;
         color: #282828;
         position: relative;
         top: -117px;
-        left: 200px;
+        left: 220px;
     }
 }
 
@@ -77,7 +93,7 @@ p, ul, ol, pre {
 }
 
 .post {
-    margin-bottom: 48px;
+    margin-bottom: 96px;
     
     &:last-child {
         margin-bottom: 0;
@@ -93,11 +109,14 @@ p, ul, ol, pre {
 
 pre {
     background: #000;
-    overflow: hidden;
+    overflow: auto;
     color: #FFF;
-    padding: 18px 12px 18px 52px;
-    margin-left: -52px;
+    padding: 18px 12px 18px 86px;
+    margin-left: -96px;
     margin-right: -48px;
+    @include border-top-right-radius(4px);
+    @include border-bottom-right-radius(4px);
+    border-left: 10px solid #222;
 }
 
 code {

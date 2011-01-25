@@ -7,7 +7,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
     from django.template.defaultfilters import slugify
     
-    def wrap_in_plugin_holder(instance, placeholder, rendered_content, original_context):
+    def wrap_in_plugin_holder(instance, placeholder, rendered_content, context):
         classes = ['plugin-holder', slugify(instance.plugin_type)]
         instance.is_first_in_placeholder() and classes.append('first')
         instance.is_last_in_placeholder() and classes.append('last')

@@ -4,10 +4,10 @@ title: bla
 ---
 
 {% for post in site.posts %}
-    <div class="post">
+    <article class="post">
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <div class="date">{{ post.date|date:"%B %d, %Y" }}</div>
         
         {{ post.content }}
-    </div>
+    </article>
 {% endfor %}

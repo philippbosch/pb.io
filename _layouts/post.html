@@ -7,3 +7,25 @@ layout: default
 </header>
 
 {{ content }}
+
+<footer id="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = 'post-{{ post.id }}';
+        var disqus_developer = 1;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://philippbosch.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    
+    <script type="text/javascript">
+        var disqus_shortname = 'philippbosch';
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.src = 'http://disqus.com/forums/philippbosch/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+</footer>

@@ -87,6 +87,10 @@ h1 {
     }
 }
 
+h3 {
+    font-size: 18px;
+}
+
 p, ul, ol, pre {
     line-height: 21px;
     margin: 1em 0;
@@ -121,6 +125,10 @@ pre {
 
 code {
     font-family: "Droid Sans Mono", "Menlo", "Monaco", "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+#comments {
+    margin-top: 48px;
 }
 
 

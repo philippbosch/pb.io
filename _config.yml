@@ -1,0 +1,5 @@
+source:         .
+destination:    ./_site
+auto:           true
+server:         true
+exclude:        Icon.png, fabfile.py, config.rb, sass

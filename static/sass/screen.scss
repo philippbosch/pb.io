@@ -1,1 +1,125 @@
 @import "compass/reset";
+@import "compass/css3";
+
+body {
+    font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background: #333;
+    padding: 192px 0 48px 48px;
+}
+
+#header {
+    position: fixed;
+    margin-top: 48px;
+}
+
+#content {
+    margin-left: 420px;
+    background: #FFF;
+    padding: 48px;
+    @include box-shadow(rgba(0,0,0,1) 0 0 3px);
+    @include border-top-left-radius(4px);
+    @include border-bottom-left-radius(4px);
+}
+
+#identity {
+    color: #999;
+    
+    .fn {
+        font-size: 32px;
+        margin-left: -2px;
+        margin-bottom: 0.15em;
+        color: #FFF;
+    }
+    
+    .subline {
+        padding-bottom: 10px;
+    }
+    
+    #logo {
+        font-size: 140px;
+        color: #2c2c2c;
+        position: relative;
+        top: -117px;
+        left: 200px;
+    }
+}
+
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: 48px;
+    margin-bottom: 0.5em;
+    
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+p, ul, ol, pre {
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+pre {
+    background: #000;
+    overflow: hidden;
+    color: #FFF;
+    padding: 18px 12px 18px 48px;
+    margin-left: -48px;
+    margin-right: -48px;
+}
+
+code {
+    font-family: "Droid Sans Mono", "Menlo", "Monaco", "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+
+// PRETTYPRINT
+
+.str { color: #a5c261; }
+.kwd { color: #a1c2da; }
+.com { color: #666; }
+.typ { color: #6e9cbe; }
+.lit { color: #c28439; }
+.pun { color: #efefef; }
+.pln { color: #efefef; }
+.tag { color: #e8bf6a; }
+.atn { color: #c8a550; }
+.atv { color: #a5c261; }
+.dec { color: #c28439; }
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+    list-style: none;
+}
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9{
+    background: #eee;
+}
+@media print {
+    .str{ color:#060; }
+    .kwd{ color:#006; font-weight: bold; }
+    .com{ color:#600; font-style: italic; }
+    .typ{ color:#404; font-weight: bold; }
+    .lit{ color:#044; }
+    .pun{ color:#440; }
+    .pln{ color:#000; }
+    .tag{ color:#006; font-weight:bold; }
+    .atn{ color:#404; }
+    .atv{ color:#060; }
+}

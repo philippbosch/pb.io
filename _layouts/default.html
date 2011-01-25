@@ -7,16 +7,25 @@ title: My Site
     <head>
         <meta charset="utf-8">
         <title>{{ title }}</title>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold|Droid+Sans+Mono" rel="stylesheet" />
         <link rel="stylesheet" href="/static/stylesheets/screen.css">
     </head>
     
     <body>
         <div id="page">
+            <div id="header">
+                <div id="identity">
+                    <div class="fn">Philipp Bosch</div>
+                    <div class="subline">Web &amp; Mobile Development</div>
+                    <div id="logo">›»</div>
+                </div>
+            </div>
             <div id="content">
                 {{ content }}
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        <script src="/static/prettify/prettify.js"></script>
         <script src="/static/javascripts/master.js"></script>
     </body>
     

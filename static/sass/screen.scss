@@ -1,7 +1,8 @@
 @import "compass/reset";
 @import "compass/css3";
 
-$body-padding-vertical: 192px;
+$body-padding-top: 192px;
+$body-padding-bottom: 192px;
 $body-padding-left: 48px;
 
 $left-column-width: 320px;
@@ -19,16 +20,12 @@ body {
     font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     background: #333 image-url("bg.png") fixed;
-    padding: $body-padding-vertical 0 $body-padding-vertical $body-padding-left;
+    padding: $body-padding-top 0 $body-padding-bottom $body-padding-left;
 }
 
 a {
     text-decoration: none;
     color: #A5C261;
-    
-    &:hover {
-        opacity: 0.5;
-    }
 }
 
 #header {
@@ -84,18 +81,12 @@ a {
 
 #footer {
     position: fixed;
-    bottom: 48px;
+    bottom: 0px;
     right: 48px;
     left: $body-padding-left + $left-column-width + $content-padding-horizontal;
     color: #333;
     line-height: 16px;
-    font-size: 12px;
-    
-    #copyright {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+    font-size: 10px;
 }
 
 .vcard {
@@ -162,3 +153,4 @@ p, ul, ol, pre {
 
 @import "code";
 @import "comments";
+@import "elsewhere";

@@ -12,6 +12,14 @@ $content-padding-horizontal: 96px;
 
 $line-height: 21px;
 
+$default-box-shadow-color: rgba(0,0,0,1);
+$default-box-shadow-h-offset: 0;
+$default-box-shadow-v-offset: 0;
+$default-box-shadow-blur: 3px;
+
+$green: #A5C261;
+
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
     display: block;
 }
@@ -25,7 +33,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #A5C261;
+    color: $green;
 }
 
 #header {
@@ -38,7 +46,7 @@ a {
     z-index: 2;
     margin-left: $left-column-width;
     background: #FFF;
-    @include box-shadow(rgba(0,0,0,1) 0 0 3px);
+    @include box-shadow;
     @include border-top-left-radius(4px);
     @include border-bottom-left-radius(4px);
     padding: $content-padding-vertical $content-padding-horizontal;
@@ -90,14 +98,6 @@ a {
 }
 
 .vcard {
-    position: absolute;
-    top: -150px;
-    background: #222;
-    color: #999;
-    padding: 24px;
-    width: 240px;
-    @include rotate(-8deg);
-    
     .photo {
         position: absolute;
         left: -9999px;

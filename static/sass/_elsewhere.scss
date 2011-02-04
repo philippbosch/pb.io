@@ -3,11 +3,10 @@
 
 #elsewhere {
     @include horizontal-list;
-    margin-bottom: 24px;
-    padding-bottom: 84px;
+    padding-bottom: 108px;
     position: relative;
     
-    li {
+    & > li {
         margin-right: 24px;
         padding-bottom: 8px;
         
@@ -31,35 +30,74 @@
         }
     }
     
-    .twitter a.icon {
-        @include icons-sprite(twitter);
+    #contact {
+        a.icon {
+            @include icons-sprite(contact);
+        }
+        
+        &:hover, &:focus {
+            a.icon {
+                @include icons-sprite(contact-hi);
+            }
+        }
     }
     
-    .github a.icon {
-        @include icons-sprite(github);
+    #twitter {
+        a.icon {
+            @include icons-sprite(twitter);
+        }
+        
+        &:hover, &:focus {
+            a.icon {
+                @include icons-sprite(twitter-hi);
+            }
+        }
     }
     
-    .lastfm a.icon {
-        @include icons-sprite(lastfm);
+    #github {
+        a.icon {
+            @include icons-sprite(github);
+        }
+        
+        &:hover a.icon {
+            @include icons-sprite(github-hi);
+        }
     }
     
-    .xing a.icon {
-        @include icons-sprite(xing);
+    #lastfm {
+        a.icon {
+            @include icons-sprite(lastfm);
+        }
+        
+        &:hover a.icon {
+            @include icons-sprite(lastfm-hi);
+        }
+    }
+    
+    #xing {
+        a.icon {
+            @include icons-sprite(xing);
+        }
+        
+        &:hover a.icon {
+            @include icons-sprite(xing-hi);
+        }
     }
     
     .bubble {
         width: 100%;
         height: 84px;
-        background: #FFF;
         position: absolute;
         top: 62px;
         left: 0;
-        opacity: 0;
-        @include border-radius(4px);
-        @include transition(opacity, 250ms, ease);
         
         ul.content {
+            @include background(linear-gradient(top, $green, darken($green, 10%)));
+            @include border-radius(4px);
+            @include transition(opacity transform, 500ms, ease);
+            @include translate(0, 100px);
             @include inline-block-list;
+            opacity: 0;
             padding: 8px;
             line-height: 1.2;
             white-space: nowrap;
@@ -70,7 +108,6 @@
                 height: 68px;
                 margin: 0;
                 margin-right: 12px;
-                margin-bottom: 20px;
                 padding: 0;
             }
         }
@@ -78,21 +115,32 @@
     
     li {
         &:hover .bubble {
-            opacity: 1;
+            
+            ul.content {
+                opacity: 1;
+                @include translate(0,0);
+            }
         }
     }
     
     
     .bubble {
-        .name {
+        a {
+            color: #FFF;
+        }
+        
+        .service {
             font-weight: bold;
+        }
+        
+        .name {
             font-size: 14px;
             display: block;
             margin-bottom: .5em;
         }
         
         .created_at {
-            color: #CCC;
+            color: mix($green, #FFF);
             
             &:before {
                 content: '— ';

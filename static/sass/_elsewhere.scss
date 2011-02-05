@@ -90,14 +90,15 @@
         position: absolute;
         top: 62px;
         left: 0;
+        display: none;
         
         ul.content {
             @include background(linear-gradient(top, $green, darken($green, 10%)));
             @include border-radius(4px);
-            @include transition(opacity transform, 500ms, ease);
-            @include translate(0, 100px);
+            // @include transition(opacity transform, 500ms, ease);
+            // @include translate(0, 100px);
+            // opacity: 0;
             @include inline-block-list;
-            opacity: 0;
             padding: 8px;
             line-height: 1.2;
             white-space: nowrap;
@@ -115,10 +116,11 @@
     
     li {
         &:hover .bubble {
+            display: block;
             
             ul.content {
-                opacity: 1;
-                @include translate(0,0);
+                // opacity: 1;
+                // @include translate(0,0);
             }
         }
     }

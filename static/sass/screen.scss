@@ -6,6 +6,7 @@ $body-padding-bottom: 192px;
 $body-padding-left: 48px;
 
 $left-column-width: 320px;
+$max-content-width: 640px;
 
 $content-padding-vertical: 48px;
 $content-padding-horizontal: 96px;
@@ -46,13 +47,14 @@ a {
     z-index: 2;
     margin-left: $left-column-width;
     background: #FFF;
+    color: #444;
     @include box-shadow;
     @include border-top-left-radius(4px);
     @include border-bottom-left-radius(4px);
     padding: $content-padding-vertical $content-padding-horizontal;
     
     & > * {
-        max-width: 640px;
+        max-width: $max-content-width;
     }
 }
 
@@ -116,6 +118,7 @@ h1 {
     margin-top: 48px;
     margin-bottom: 24px;
     margin-left: -2px;
+    color: #000;
     
     &:first-child {
         margin-top: 0;
@@ -142,6 +145,19 @@ em {
 strong {
     font-weight: bold;
 }
+
+blockquote {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #CCC;
+    font-style: italic;
+    color: #777;
+}
+
+#content blockquote {
+    max-width: $max-content-width - 24;
+}
+
 
 .post {
     margin-bottom: 96px;

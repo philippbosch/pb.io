@@ -9,21 +9,11 @@ I then saw that they are offering iCalendar files on the [calendar page](http://
 
 So I sat down and put together a tiny web service that pulls in iCalendar data from a URL and converts it to JSON. Here's how to use it:
 
-{% highlight html %}
-http://ical2json.pb.io/the-website.com/path/to/file.ics
-{% endhighlight %}
+`http://ical2json.pb.io/the-website.com/path/to/file.ics`
 
-So for example let's take some events from [Last.fm](http://www.last.fm/). They provide iCalendar data at URLs like this:
+So for example let's take some events from [Last.fm](http://www.last.fm/). They provide iCalendar data at URLs like this: `http://ws.audioscrobbler.com/1.0/artist/Shout+Out+Louds/events.ics`.
 
-{% highlight html %}
-http://ws.audioscrobbler.com/1.0/artist/Shout+Out+Louds/events.ics
-{% endhighlight %}
-
-To get this data in JSON format use a URL like this:
-
-{% highlight html %}
-http://ical2json.pb.io/ws.audioscrobbler.com/1.0/artist/Shout+Out+Louds/events.ics
-{% endhighlight %}
+To get this data in JSON format use a URL like this: `http://ical2json.pb.io/ws.audioscrobbler.com/1.0/artist/Shout+Out+Louds/events.ics`
 
 The response will look like this:
 

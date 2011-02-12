@@ -10,6 +10,8 @@ title: Web and Mobile Development.
             <div class="date">{{ post.date|date:"%B %d, %Y" }}</div>
         </header>
         
-        {{ post.content }}
+        {{ post.content|before_fold }}
+        
+        <p><a href="{{ post.url }}">Read more »</a></p>
     </article>
 {% endfor %}

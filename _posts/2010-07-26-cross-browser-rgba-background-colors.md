@@ -11,6 +11,8 @@ First, this is what the designer wanted it to look like:
 
 The problem is the partly-transparent background of the tabs and the darker section with the inactive tab titles. For modern Browsers that's just a matter of `background-color: rgba(134,161,11,0.6);`. But of course Internet Explorer is a bit late to the party and does not support this. 
 
+<!--more-->
+
 So I stumpled upon an [article by Erig Eggert](http://yatil.de/Weblog/cross-browser-rgba) (sorry, German only) where he describes an approach using a gradient `filter`. The thing is that this filter allows not only opaque but also partly-transparent colors to be used. Use the same non-opaque color twice for start and end color and you effectively have a partly-transparent area. The syntax is as follows:
 
 {% highlight css %}

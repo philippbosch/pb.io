@@ -11,6 +11,8 @@ So I sat down and put together a tiny web service that pulls in iCalendar data f
 
 `http://ical2json.pb.io/the-website.com/path/to/file.ics`
 
+<!--more-->
+
 So for example let's take some events from [Last.fm](http://www.last.fm/). They provide iCalendar data at URLs like this: `http://ws.audioscrobbler.com/1.0/artist/Shout+Out+Louds/events.ics`.
 
 To get this data in JSON format use a URL like this: `http://ical2json.pb.io/ws.audioscrobbler.com/1.0/artist/Shout+Out+Louds/events.ics`

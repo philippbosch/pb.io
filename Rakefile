@@ -1,5 +1,5 @@
 def jekyll(opts="", path="")
-  sh path + "jekyll " + opts
+  sh path + "ejekyll " + opts
 end
 
 desc "Build site using Jekyll"
@@ -19,6 +19,11 @@ task :copy404 do
 end
 
 desc "Deploy to GitHub Pages"
-task :deploy do
+task :github do
   sh "git push origin gh-pages"
+end
+
+desc "Deploy to Linode server"
+task :deploy do
+  sh "rsync -rtz --delete _site/ pb@pb.io:projects/pb/"
 end

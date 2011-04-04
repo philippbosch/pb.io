@@ -132,11 +132,18 @@ h1 {
 
 h3 {
     font-size: 18px;
+    color: #000;
+    font-weight: bold;
 }
 
 p, ul, ol, pre {
     line-height: $line-height;
     margin: 1em 0;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 3em;
 }
 
 em {

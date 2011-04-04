@@ -19,6 +19,13 @@
                 <div class="fn">Philipp Bosch</div>
                 <div class="subline">Web &amp; Mobile Development</div>
             </a>
+            {% if page.tags %}
+                <ul class="tags">
+                    {% for tag in page.tags %}
+                        <li><a href="#">{{ tag }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         </header>
         
         <section id="content">

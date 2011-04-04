@@ -1,6 +1,13 @@
 ---
 layout: post
 title: Leave a Comment
+tags:
+- mobile
+- iphone
+- the product
+- web
+- bethanien
+- kreuzberg
 ---
 
 Tonight will be the opening reception of a group exhibition called **«Locate Me»** at the [Kunstraum Kreuzberg](http://www.kunstraumkreuzberg.de/prog_2.html) inside the Künstlerhaus Bethanien. My dear office mates [Patrick and Dennis](http://the-product.org/) will show their project [«Leave a Comment»](http://the-product.org/leave-a-comment-toolkit) there.

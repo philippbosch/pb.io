@@ -1,6 +1,13 @@
 ---
 layout: post
 title: Cross-browser RGBA background colors
+tags:
+- css
+- rgba
+- alpha
+- transparency
+- filter
+- ie
 ---
 
 For a website I'm currently working on I needed a way to have an image and on top of that a text box with a partly transparent background color. I didn't want to use any hacks with AlphaImageLoader and stuff but preferred a pure CSS solution. And I found a nice one, I think.

@@ -1,6 +1,12 @@
 ---
 layout: post
 title: Consume iCalendar data as JSON
+tags:
+- ical
+- json
+- webservice
+- lanyrd
+- vcalendar
 ---
 
 While building this website I wanted to incorporate an overview of conferences that I'm going to. The data is already out there at [Lanyrd](http://lanyrd.com/people/philippbosch) but unfortunately there is no API yet. There are [badges](http://lanyrd.com/services/badges/) available to embed in your site but that didn't cut it for me. 

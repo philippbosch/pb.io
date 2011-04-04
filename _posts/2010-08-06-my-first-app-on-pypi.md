@@ -1,6 +1,14 @@
 ---
 layout: post
 title: "My first app on PyPI: django-tellafriend"
+tags:
+- pypi
+- cheese shop
+- django
+- setuptools
+- setup.py
+- tell-a-friend
+- sphinx
 ---
 
 I should have done this much earlier, but a few minutes ago I uploaded my first Django app to [PyPI](http://pypi.python.org/), the Python Package Index a.k.a. *«The Cheese Shop»*. The app itself is nothing more than a simple tell-a-friend functionality that I extracted from [some client project](http://polygonbaby.com/).

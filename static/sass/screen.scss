@@ -1,104 +1,5 @@
-@import "compass/reset";
-@import "compass";
-
-$body-padding-top: 192px;
-$body-padding-bottom: 192px;
-$body-padding-left: 48px;
-
-$left-column-width: 320px;
-$max-content-width: 640px;
-
-$content-padding-vertical: 48px;
-$content-padding-horizontal: 96px;
-
-$line-height: 21px;
-
-$default-box-shadow-color: rgba(0,0,0,1);
-$default-box-shadow-h-offset: 0;
-$default-box-shadow-v-offset: 0;
-$default-box-shadow-blur: 3px;
-
-$green: #a5c261;
-
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
-    display: block;
-}
-
-body {
-    font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    background: #333 image-url("bg.png") fixed;
-    padding: $body-padding-top 0 $body-padding-bottom $body-padding-left;
-}
-
-a {
-    text-decoration: none;
-    color: $green;
-}
-
-#header {
-    position: fixed;
-    margin-top: 48px;
-    width: 320px;
-}
-
-#content {
-    position: relative;
-    z-index: 2;
-    margin-left: $left-column-width;
-    background: #FFF;
-    color: #444;
-    @include box-shadow;
-    @include border-top-left-radius(4px);
-    @include border-bottom-left-radius(4px);
-    padding: $content-padding-vertical $content-padding-horizontal;
-    
-    & > * {
-        max-width: $max-content-width;
-    }
-}
-
-#identity {
-    color: #999;
-    
-    .fn {
-        font-size: 32px;
-        font-weight: bold;
-        margin-left: -2px;
-        margin-bottom: 0.15em;
-        color: #FFF;
-    }
-    
-    .subline {
-        padding-bottom: 10px;
-    }
-    
-    .fn, .subline {
-        @include text-shadow(rgba(0,0,0,0.4) 1px 1px);
-    }
-}
-
-#logo {
-    font-size: 280px;
-    color: #2a2a2a;
-    line-height: 80px;
-    position: fixed;
-    right: 48px;
-    top: 76px;
-    z-index: 1;
-    @include text-shadow(rgba(0,0,0,0.5) -1px -0.5px, rgba(255,255,255,0.05) 1px 0.5px);
-}
-
-#footer {
-    position: fixed;
-    bottom: 0px;
-    right: 48px;
-    left: $body-padding-left + $left-column-width + $content-padding-horizontal;
-    color: #333;
-    line-height: 16px;
-    font-size: 10px;
-}
+@import "base";
+@import "compass/utilities/general/clearfix";
 
 .vcard {
     .photo {
@@ -111,61 +12,9 @@ a {
     }
 }
 
-
-h1 {
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin-top: 48px;
-    margin-bottom: 24px;
-    margin-left: -2px;
-    color: #000;
-    
-    &:first-child {
-        margin-top: 0;
-    }
-    
-    a {
-        color: inherit;
-    }
-}
-
-h3 {
-    font-size: 18px;
-    color: #000;
-    font-weight: bold;
-}
-
-p, ul, ol, pre {
-    line-height: $line-height;
-    margin: 1em 0;
-}
-
-ol {
-    list-style: decimal;
-    margin-left: 3em;
-}
-
-em {
-    font-style: italic;
-}
-
-strong {
-    font-weight: bold;
-}
-
-blockquote {
-    margin-left: 10px;
-    padding-left: 10px;
-    border-left: 4px solid #CCC;
-    font-style: italic;
-    color: #777;
-}
-
 #content blockquote {
     max-width: $max-content-width - 24;
 }
-
 
 .post {
     margin-bottom: 96px;
@@ -183,7 +32,6 @@ blockquote {
 }
 
 .tags {
-    
     li {
         @include clearfix;
         margin-bottom: 6px;

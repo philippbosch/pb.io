@@ -46,7 +46,6 @@
             'success': function(data, status, xhr) {
                 var tracks = data.query.results.recenttracks.track,
                     $content = $(this);
-                console.log(tracks[0]);
                 $.each(tracks, function(i, track) {
                     $.tmpl('<li class="item"><img src="${image[0].content}"><div class="artist">${artist.content}</div><div class="title">${name}</div></li>', track).appendTo($content);
                 });

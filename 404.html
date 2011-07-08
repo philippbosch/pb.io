@@ -72,7 +72,7 @@
         <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
         <script src="/static/javascripts/master.js"></script>
         
-        <script type="text/javascript">
+        <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-20204786-1']);
             _gaq.push(['_trackPageview']);
@@ -83,6 +83,17 @@
             })();
         </script>
         
+        <script>
+            document.write(unescape('%3Cscript src="//analytics.pb.io/piwik.js"%3E%3C/script%3E'));
+        </script>
+        <script>
+            try {
+                var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 3);
+                piwikTracker.trackPageView();
+                piwikTracker.enableLinkTracking();
+            } catch(err) {}
+        </script>
+        <noscript><p><img src="http://analytics.pb.io/piwik.php?idsite=3" style="border:0" alt="" /></p></noscript>
     </body>
     
 </html>

@@ -10,6 +10,10 @@
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
         <link rel="icon" type="image/png" href="/static/images/favicon.png">
         <link href="http://feeds.feedburner.com/philippbosch" rel="alternate" title="Philipp Bosch. Web &amp; Mobile Development." type="application/atom+xml">
+        <meta property="og:title" content="Philipp Bosch. {{ page.title }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://pb.io{{ page.url }}" />
+        <meta property="og:image" content="http://pb.io/static/images/teaser.png" />
     </head>
     
     <body>
@@ -30,6 +34,10 @@
         
         <section id="content">
             {{ content }}
+            
+            <g:plusone size="medium" count="true" href="http://pb.io{{ page.url }}"></g:plusone>
+            <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pb.io{{ page.url }}" data-count="compact" data-via="philippbosch" data-width="80px">Tweet</a>
+            
         </section>
         
         <footer id="footer">
@@ -75,6 +83,8 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
         <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
         <script src="/static/javascripts/master.js"></script>
+        <script src="https://apis.google.com/js/plusone.js" async></script>
+        <script src="http://platform.twitter.com/widgets.js" async></script>
         
         <script>
             var _gaq = _gaq || [];

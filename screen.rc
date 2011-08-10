@@ -1,0 +1,12 @@
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.0B}%w  %{.gW} %t %{.0w} %=%l"
+startup_message off
+defscrollback 5000
+altscreen on
+autodetach on
+bind 'W' windowlist -b
+
+screen -t server 1 bash -c "rake"
+screen -t compass 2 bash -c "compass watch static"
+screen -t shell 3 bash -l

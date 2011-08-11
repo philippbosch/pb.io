@@ -56,4 +56,38 @@ Download: [stuff.pb.io/9BaK](http://stuff.pb.io/9BaK)
 
 ----------------------------------------------------------------
 
+### Work On
+
+This one is probably a bit specific to my workflow but may give you
+some ideas on how to create a similar extension for your needs.
+
+Open a new terminal, activate virtual environment (Python), start 
+development server, start [`compass watch`](http://compass-style.org/), 
+open the corresponding folder in TextMate and open the local website 
+in the browser. This extensions makes some assumptions that probably 
+do not hold true for you:
+
+* I'm using [iTerm2](http://www.iterm2.com/) instead of the OSX 
+  Terminal.app
+* I'm developing in Python and using 
+  [virtualenv](http://pypi.python.org/pypi/virtualenv) and 
+  [virtualenvwrapper](http://www.doughellmann.com/projects/virtualenvwrapper/)
+* I'm making use of virtualenvwrapper's `postactivate` hook to 
+  initiate a [screen](http://www.gnu.org/s/screen/)/[byobu](https://launchpad.net/byobu) 
+  session that in turn opens virtual terminals with the development 
+  server, `compass watch`, etc.
+* I have my project sources in `~/Sites/projectname`
+* I have my development server running at `http://projectname:8000/` 
+  (doing this using [ghost](https://github.com/bjeanes/ghost)).
+
+Keyword: `workon`  
+Example: `workon myproject`  
+Download: [stuff.pb.io/9D88](http://stuff.pb.io/9D88)  
+Source: [gist.github.com/1139327](https://gist.github.com/1139327)
+
+----------------------------------------------------------------
+
 I will try to update this post when I create new extensions. Many more helpful extensions can be found on the [Alfred blog](http://blog.alfredapp.com/2011/08/02/alfred-extensions/).
+
+**Update 1 (2011-08-11):**  
+«Work On» extension added. 

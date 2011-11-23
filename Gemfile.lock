@@ -1,0 +1,54 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    albino (1.3.3)
+      posix-spawn (>= 0.3.6)
+    chunky_png (1.2.5)
+    classifier (1.3.3)
+      fast-stemmer (>= 1.0.0)
+    compass (0.11.5)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-facebox-plugin (0.1.2)
+      compass (>= 0.10.4.pre.1)
+    compass-growl (0.0.5)
+      compass (~> 0.11.1)
+      growl_notify
+    directory_watcher (1.4.0)
+    fast-stemmer (1.0.0)
+    foreman (0.26.1)
+      term-ansicolor (~> 1.0.5)
+      thor (>= 0.13.6)
+    fssm (0.2.7)
+    growl_notify (0.0.3)
+      rb-appscript
+    jekyll (0.11.0)
+      albino (>= 1.3.2)
+      classifier (>= 1.3.1)
+      directory_watcher (>= 1.1.1)
+      kramdown (>= 0.13.2)
+      liquid (>= 1.9.0)
+      maruku (>= 0.5.9)
+    kramdown (0.13.3)
+    liquid (2.3.0)
+    maruku (0.6.0)
+      syntax (>= 1.0.0)
+    posix-spawn (0.3.6)
+    rb-appscript (0.6.1)
+    rb-fsevent (0.4.3.1)
+    sass (3.1.10)
+    syntax (1.0.0)
+    term-ansicolor (1.0.6)
+    thor (0.14.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  compass
+  compass-facebox-plugin
+  compass-growl
+  foreman
+  jekyll
+  rb-fsevent

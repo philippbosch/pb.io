@@ -221,7 +221,7 @@ article .tag {
 }
 /* line 80, ../sass/partials/_default.scss */
 article .tag:hover {
-  background: #8ac616;
+  background: #DDD;
   color: #FFF;
 }
 /* line 86, ../sass/partials/_default.scss */

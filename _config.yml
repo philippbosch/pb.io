@@ -1,7 +1,10 @@
-source:         .
-destination:    ./_site
-auto:           true
-server:         true
-exclude:        Icon.png, fabfile.py, config.rb, sass, CNAME, CNAME.template, README, Rakefile
-permalink:      pretty
-pygments:       true
+source:             .
+destination:        ./_site
+auto:               true
+server:             true
+exclude:            Icon.png, fabfile.py, config.rb, sass, CNAME, CNAME.template, README, Rakefile
+permalink:          pretty
+pygments:           true
+tag_dir:            tags
+tag_title_prefix:   "Tag: "
+related_tags:       false

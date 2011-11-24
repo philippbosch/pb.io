@@ -31,6 +31,13 @@ $green: #8AC616;
 a {
     color: $green;
     text-decoration: none;
+    
+    &:hover {
+        color: mix($green, #000, 97%);
+        background: rgba(#000, 0.03);
+        @include box-shadow(rgba(#000, 0.03) 0 0 0 3px);
+        @include border-radius(1px);
+    }
 }
 
 article {

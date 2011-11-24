@@ -158,7 +158,7 @@ a {
 
 /* line 36, ../sass/partials/_default.scss */
 article {
-  margin-bottom: 4em;
+  margin: 2em 0 4em 0;
 }
 /* line 39, ../sass/partials/_default.scss */
 article p {

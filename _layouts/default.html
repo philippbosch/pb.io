@@ -1,101 +1,34 @@
 <!doctype html>
 <html>
-    
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>Philipp Bosch. {{ page.title }}</title>
-        <link href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold|Droid+Sans+Mono" rel="stylesheet">
-        <link rel="stylesheet" href="/static/stylesheets/screen.css">
-        <meta name="viewport" content="width=1024">
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="icon" type="image/png" href="/static/images/favicon.png">
-        <link href="http://feeds.feedburner.com/philippbosch" rel="alternate" title="Philipp Bosch. Web &amp; Mobile Development." type="application/atom+xml">
+        <link rel="stylesheet" href="/static/stylesheets/less.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+        <link href="http://feeds.feedburner.com/philippbosch" rel="alternate" title="Philipp Bosch. Web &amp; Mobile Development." type="application/atom+xml" />
         <meta property="og:title" content="Philipp Bosch. {{ page.title }}" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://pb.io{{ page.url }}" />
         <meta property="og:image" content="http://pb.io/static/images/teaser.png" />
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
     </head>
     
-    <body>
-        <div id="logo">›»</div>
-        <header id="header">
-            <a href="/" id="identity">
-                <div class="fn">Philipp Bosch</div>
-                <div class="subline">Web &amp; Mobile Development</div>
-            </a>
-            {% if page.tags %}
-                <ul class="tags">
-                    {% for tag in page.tags %}
-                        <li><a href="#">{{ tag }}</a></li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
+    <body lang="en">
+        <header id="masthead">
+          <a href="/" class="wrapper">
+            <h1>Philipp Bosch</h1>
+            <h2>Building the Web since 1995</h2>
+          </a>
         </header>
         
         <section id="content">
             {{ content }}
-            
-            <g:plusone size="medium" count="true" href="http://pb.io{{ page.url }}"></g:plusone>
-            <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pb.io{{ page.url }}" data-count="compact" data-via="philippbosch" data-width="80px">Tweet</a>
-            
         </section>
-        
-        <footer id="footer">
-            <ul id="elsewhere">
-                <li id="contact">
-                    <a href="mailto:hello@pb.io" class="icon"><span>Contact</span></a>
-                    <div class="bubble">
-                        <ul class="content vcard">
-                            <li class="item">
-                                <img src="/static/images/philipp-bosch.jpg" class="photo">
-                                <a class="url fn" href="http://pb.io/">Philipp Bosch</a>
-                                <div class="adr">
-                                    <div class="extended-address">c/o The Product<br>Haus C, Treppe 6, 3. OG</div>
-                                    <div class="street-address">Reichenberger Straße 124</div>
-                                    <span class="postal-code">10405</span> <span class="locality">Berlin</span>, <span class="country-name">Germany</span>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <a class="email" href="mailto:hello@pb.io">hello@pb.io</a>
-                                <div class="tel">+49 179 5057388</div>
-                                <br>
-                                <a type="text/directory" href="http://h2vx.com/vcf/pb.io">Download vCard</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li id="twitter">
-                    <a href="http://twitter.com/philippbosch" class="icon"><span>Twitter</span></a>
-                </li>
-                <li id="github">
-                    <a href="http://github.com/philippbosch" class="icon"><span>GitHub</span></a>
-                </li>
-                <li id="lastfm">
-                    <a href="http://last.fm/user/eyesbreaker" class="icon"><span>Last.fm</span></a>
-                </li>
-                <li id="xing">
-                    <a href="https://www.xing.com/profile/Philipp_Bosch" class="icon"><span>XING</span></a>
-                </li>
-            </ul>
-            
-        </footer>
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
-        <script src="/static/javascripts/master.js"></script>
-        <script src="https://apis.google.com/js/plusone.js" async></script>
-        <script src="http://platform.twitter.com/widgets.js" async></script>
-        
-        <script>
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-20204786-1']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
         
         <script>
             document.write(unescape('%3Cscript src="//analytics.pb.io/piwik.js"%3E%3C/script%3E'));

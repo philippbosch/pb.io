@@ -1,0 +1,83 @@
+/* Default Layout: 992px.
+ * Gutters: 24px.
+ * Outer margins: 48px.
+ * Leftover space for scrollbars @1024px: 32px.  */
+
+#{$less-grid-element} {
+    @include grid(10);
+    margin: 0 auto;
+}
+
+#masthead {
+    margin-bottom: 4em;
+    background: image-url("logo.png") right center no-repeat;
+    
+    .wrapper {
+        color: inherit;
+    }
+    
+    h1 {
+        line-height: 1;
+        @extend large;
+    }
+    
+    h2 {
+        color: #AAA;
+    }
+}
+
+a {
+    color: #8AC616;
+    text-decoration: none;
+}
+
+article {
+    margin-bottom: 4em;
+    
+    p {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .date {
+        background: #F9F9F9;
+        color: #AAA;
+        @include inline-block;
+        padding: 0 8px 0 2000px;
+        margin-left: -1999px;
+        text-transform: uppercase;
+        font-size: 70%;
+        font-weight: bold;
+        border-top: 1px solid rgba(#000, 0.1);
+        border-right: 1px solid rgba(#000, 0.1);
+    }
+    
+    h1 {
+        margin: 0.2em 0;
+        font-weight: normal;
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+p, img, div.highlight {
+    margin: 1em 0;
+}
+
+code {
+    @include text-shadow(none);
+    color: #888;
+    font-family: Meslo, Menlo, Monaco, "Droid Sans Mono", monospace;
+    @include border-radius(2px);
+}
+
+p code {
+    padding: 2px 4px;
+}
+
+#dsq-global-toolbar, .dsq-tooltip-small {
+    @include text-shadow(none);
+}

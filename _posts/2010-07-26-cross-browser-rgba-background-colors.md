@@ -29,7 +29,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(
 
 The values for `startColorstr` and `endColorstr` consist of two parts (after the `#`): the first – `99` – is the alpha transparency (0.6 * 255 = 153, in hexadecimal: 99), the second – `86A10B` – is the hexadecimal representation of the color's RGB values (161, 161, 11). That's it.
 
-Combine this with the RGBA version and maybe a opaque fallback, and you get this:
+Combine this with the RGBA version and maybe an opaque fallback, and you get this:
 
 {% highlight css %}
 background-color: #86A10B;

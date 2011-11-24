@@ -1,0 +1,35 @@
+/* Mobile Layout: 320px.
+ * Gutters: 24px.
+ * Outer margins: 34px.
+ * Inherits styles from: Default Layout.  */
+
+@media only screen and (max-width: 767px) {
+    #{$less-grid-element} {
+        @include grid(3);
+    }
+    
+    body {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    #masthead {
+        background-image: image-url("logo-small.png");
+        
+        h1 {
+            font-size: 26px;
+        }
+        
+        h2 {
+            font-size: 13px;
+            line-height: inherit;
+        }
+    }
+    
+    article {
+        h1 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}

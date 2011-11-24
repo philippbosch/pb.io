@@ -1,0 +1,35 @@
+// Global style definitions
+
+h1 {
+    @extend .large;
+    letter-spacing: -1px;
+}
+
+h2 {
+    @extend .bigger;
+    font-weight: normal;
+}
+
+h3 {
+    @extend .big;
+    font-weight: normal;
+    border-left: 12px solid #CCC;
+    padding-left: 12px;
+    margin-left: -24px;
+}
+
+small {
+    @extend .small;
+}
+
+body {
+    background: #FFF image-url("bg.png");
+    color: #4D4D4D;
+    font-family: "Helvetica Neue", sans-serif;
+    // Stops Mobile Safari from auto-adjusting font-sizes
+    -webkit-text-size-adjust: 100%;
+    @include text-shadow(#FFF 0 1px);
+}
+
+// Selection colors (easy to forget)
+@include selection-color(unquote("rgb(204,204,204)"));

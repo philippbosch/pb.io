@@ -6,8 +6,8 @@ title: Web and Mobile Development.
 {% for post in site.posts %}
     <article class="post">
         <header>
-            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
             <div class="date">{{ post.date|date:"%B %d, %Y" }}</div>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
         </header>
         
         {{ post.content|before_fold }}

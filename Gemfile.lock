@@ -10,11 +10,11 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-facebox-plugin (0.1.2)
-      compass (>= 0.10.4.pre.1)
     compass-growl (0.0.5)
       compass (~> 0.11.1)
       growl_notify
+    compass-less-plugin (1.0)
+      compass (>= 0.10)
     directory_watcher (1.4.0)
     fast-stemmer (1.0.0)
     foreman (0.26.1)
@@ -30,11 +30,13 @@ GEM
       kramdown (>= 0.13.2)
       liquid (>= 1.9.0)
       maruku (>= 0.5.9)
+    jekyll_ext (0.1.4)
     kramdown (0.13.3)
-    liquid (2.3.0)
+    liquid (2.2.2)
     maruku (0.6.0)
       syntax (>= 1.0.0)
     posix-spawn (0.3.6)
+    rake (0.9.2)
     rb-appscript (0.6.1)
     rb-fsevent (0.4.3.1)
     sass (3.1.10)
@@ -47,8 +49,11 @@ PLATFORMS
 
 DEPENDENCIES
   compass
-  compass-facebox-plugin
   compass-growl
+  compass-less-plugin
   foreman
   jekyll
+  jekyll_ext
+  liquid (< 2.3.0)
+  rake
   rb-fsevent

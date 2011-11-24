@@ -3,7 +3,14 @@ layout: default
 ---
 <article>
     <header>
-        <div class="date">{{ page.date|date:"%B %d, %Y" }}</div>
+        <div class="meta">
+            <div class="date">{{ page.date|date:"%B %d, %Y" }}</div>
+            {% if page.tags %}
+                {% for tag in page.tags %}
+                    <a href="#" class="tag">{{ tag }}</a>
+                {% endfor %}
+            {% endif %}
+        </div>
         <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
     </header>
     {{ content }}

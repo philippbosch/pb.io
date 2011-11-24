@@ -3,6 +3,8 @@
  * Outer margins: 48px.
  * Leftover space for scrollbars @1024px: 32px.  */
 
+$green: #8AC616;
+
 #{$less-grid-element} {
     @include grid(10);
     margin: 0 auto;
@@ -27,7 +29,7 @@
 }
 
 a {
-    color: #8AC616;
+    color: $green;
     text-decoration: none;
 }
 
@@ -39,17 +41,35 @@ article {
         overflow: hidden;
     }
     
-    .date {
-        background: #F9F9F9;
-        color: #AAA;
-        @include inline-block;
-        padding: 0 8px 0 2000px;
-        margin-left: -1999px;
+    .meta {
         text-transform: uppercase;
         font-size: 70%;
         font-weight: bold;
-        border-top: 1px solid rgba(#000, 0.1);
-        border-right: 1px solid rgba(#000, 0.1);
+        color: #BBB;
+        @include text-shadow(none);
+    }
+    
+    .date, .tag {
+        @include box-shadow(rgba(#000, 0.1) -1px 1px inset);
+        background: #F9F9F9;
+        background: #F9F9F9;
+        @include inline-block;
+    }
+    
+    .date {
+        padding: 0 8px 0 2000px;
+        margin-left: -1999px;
+    }
+    
+    .tag {
+        padding: 0 8px 0 7px;
+        font-weight: normal;
+        color: inherit;
+        
+        &:hover {
+            background: $green;
+            color: #FFF;
+        }
     }
     
     h1 {

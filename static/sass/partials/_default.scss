@@ -15,7 +15,12 @@ $green: #8AC616;
     background: image-url("logo.png") right center no-repeat;
     
     .wrapper {
+        display: block;
         color: inherit;
+        
+        &:hover {
+            @include box-shadow(rgba(#000, 0.04) 0 0 0 20px);
+        }
     }
     
     h1 {
@@ -33,10 +38,9 @@ a {
     text-decoration: none;
     
     &:hover {
-        color: mix($green, #000, 97%);
-        background: rgba(#000, 0.03);
-        @include box-shadow(rgba(#000, 0.03) 0 0 0 3px);
-        @include border-radius(1px);
+        color: mix($green, #000, 96%);
+        background: rgba(#000, 0.04);
+        @include box-shadow(rgba(#000, 0.04) 0 0 0 3px);
     }
 }
 

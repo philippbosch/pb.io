@@ -236,11 +236,16 @@ article img {
 }
 
 /* line 97, ../sass/partials/_default.scss */
-p, img, div.highlight {
+p, img, div.highlight, ul, ol, dl {
   margin: 1em 0;
 }
 
 /* line 101, ../sass/partials/_default.scss */
+ul, ol {
+  margin-left: 2em;
+}
+
+/* line 105, ../sass/partials/_default.scss */
 code {
   text-shadow: none;
   color: #888;
@@ -253,12 +258,12 @@ code {
   border-radius: 2px;
 }
 
-/* line 108, ../sass/partials/_default.scss */
+/* line 112, ../sass/partials/_default.scss */
 p code {
   padding: 2px 4px;
 }
 
-/* line 112, ../sass/partials/_default.scss */
+/* line 116, ../sass/partials/_default.scss */
 #dsq-global-toolbar, .dsq-tooltip-small {
   text-shadow: none;
 }

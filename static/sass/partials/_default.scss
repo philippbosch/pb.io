@@ -94,8 +94,12 @@ article {
     }
 }
 
-p, img, div.highlight {
+p, img, div.highlight, ul, ol, dl {
     margin: 1em 0;
+}
+
+ul, ol {
+    margin-left: 2em;
 }
 
 code {

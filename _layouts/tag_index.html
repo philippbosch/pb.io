@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h4>Posts tagged #{{ page.tag }}</h4>
+{% for post in site.tags[page.tag] %}
+    {% include post_in_list.html %}
+{% endfor %}

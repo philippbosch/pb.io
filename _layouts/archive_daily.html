@@ -2,7 +2,7 @@
 layout: default
 ---
  
-<h4>Posts on {{ page.month | to_month }} {{ page.day }}, {{ page.year }}</h4>
+<h2>Posts on {{ page.month | to_month }} {{ page.day }}, {{ page.year }}</h2>
 
 {% for post in site.collated_posts[page.year][page.month][page.day] reversed %}
     {% include post_in_list.html %}

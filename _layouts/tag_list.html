@@ -2,12 +2,11 @@
 layout: default
 ---
 
-
 <article>
-    <h4>Tags</h4>
+    <h2>Tags</h2>
     <div class="meta">
         {% for tag in page.tag_list %}
-            <a href="/tags/{{ tag }}/" class="tag" rel="tag">{{ tag }}</a>
+            <a href="/tags/{{ tag }}/" class="tag" rel="tag">#{{ tag }}</a>
         {% endfor %}
     </div>
 </article>

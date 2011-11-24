@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h4>Posts in {{ page.year }}</h4>
+<h2>Posts in {{ page.year }}</h2>
 
 {% for m in (1..12) reversed %}
     {% if site.collated_posts[page.year][m] %}

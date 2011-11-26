@@ -107,6 +107,7 @@ article {
         @include box-shadow(rgba(#000, 0.05) 1px 1px);
         background-color: #FFF;
         @include inline-block;
+        padding: 0 8px 0 7px;
     }
     
     .date {
@@ -115,7 +116,6 @@ article {
     }
     
     .tag {
-        padding: 0 8px 0 7px;
         font-weight: normal;
         color: inherit;
         @include single-transition(background-color color, 2000ms);
@@ -178,7 +178,32 @@ body.clients, body.projects {
     }
 }
 
-
+ul.skills {
+    @include inline-block-list;
+    padding: 1em 0;
+    overflow: visible;
+    
+    li {
+        @include box-shadow(rgba(#000, 0.05) 1px 1px);
+        background-color: #FFF;
+        padding: 0 8px 0 7px;
+        @include single-transition(transform box-shadow, 200ms, ease-in-out);
+        
+        &:hover {
+            @include scale(2);
+            @include box-shadow(rgba(#000, 0.5) 0 0 5px);
+        }
+        
+        a {
+            display: block;
+            
+            &:hover {
+                background: transparent;
+                @include box-shadow(none);
+            }
+        }
+    }
+}
 
 #dsq-global-toolbar, .dsq-tooltip-small {
     @include text-shadow(none);

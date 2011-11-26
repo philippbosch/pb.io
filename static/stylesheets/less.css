@@ -284,19 +284,19 @@ article .date, article .tag {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
+  padding: 0 8px 0 7px;
 }
 /* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 article .date, article .tag {
   *display: inline;
 }
-/* line 112, ../sass/partials/_default.scss */
+/* line 113, ../sass/partials/_default.scss */
 article .date {
   padding: 0 8px 0 2000px;
   margin-left: -1999px;
 }
-/* line 117, ../sass/partials/_default.scss */
+/* line 118, ../sass/partials/_default.scss */
 article .tag {
-  padding: 0 8px 0 7px;
   font-weight: normal;
   color: inherit;
   -moz-transition-property: background-color color;
@@ -387,7 +387,79 @@ body.clients #fancybox-close, body.projects #fancybox-close {
   box-shadow: none;
 }
 
-/* line 183, ../sass/partials/_default.scss */
+/* line 181, ../sass/partials/_default.scss */
+ul.skills {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 1em 0;
+  overflow: visible;
+}
+/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+ul.skills li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+ul.skills li {
+  *display: inline;
+}
+/* line 186, ../sass/partials/_default.scss */
+ul.skills li {
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+  -o-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+  background-color: #FFF;
+  padding: 0 8px 0 7px;
+  -moz-transition-property: transform box-shadow;
+  -webkit-transition-property: transform box-shadow;
+  -o-transition-property: transform box-shadow;
+  transition-property: transform box-shadow;
+  -moz-transition-duration: 200ms;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 192, ../sass/partials/_default.scss */
+ul.skills li:hover {
+  -moz-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  -o-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  transform: scale(2, 2);
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+}
+/* line 197, ../sass/partials/_default.scss */
+ul.skills li a {
+  display: block;
+}
+/* line 200, ../sass/partials/_default.scss */
+ul.skills li a:hover {
+  background: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 208, ../sass/partials/_default.scss */
 #dsq-global-toolbar, .dsq-tooltip-small {
   text-shadow: none;
 }

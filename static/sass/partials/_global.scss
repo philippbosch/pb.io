@@ -1,4 +1,4 @@
-// Global style definitions
+$green: #8AC616;
 
 h1 {
     @extend .large;
@@ -33,4 +33,4 @@ body {
 }
 
 // Selection colors (easy to forget)
-@include selection-color(unquote("rgb(204,204,204)"));
+@include selection-color(mix($green, #FFF, 30%));

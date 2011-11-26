@@ -99,12 +99,12 @@ body {
 
 /* line 34, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
 ::selection {
-  background: rgb(204,204,204);
+  background: #dbedb9;
 }
 
 /* line 35, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
 ::-moz-selection {
-  background: rgb(204,204,204);
+  background: #dbedb9;
 }
 
 /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
@@ -119,53 +119,74 @@ img::-moz-selection {
 
 /* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
 body {
-  -webkit-tap-highlight-color: rgb(204,204,204);
+  -webkit-tap-highlight-color: #dbedb9;
 }
 
 /* Default Layout: 992px.
  * Gutters: 24px.
  * Outer margins: 48px.
  * Leftover space for scrollbars @1024px: 32px.  */
-/* line 8, ../sass/partials/_default.scss */
-body {
+/* line 6, ../sass/partials/_default.scss */
+#masthead, #content {
   width: 896px;
   padding: 72px 48px 84px;
   margin: 0 auto;
+  position: relative;
 }
 
-/* line 13, ../sass/partials/_default.scss */
-#masthead {
-  margin-bottom: 4em;
-  background: url('/static/images/logo.png?1322125095') right center no-repeat;
+/* line 12, ../sass/partials/_default.scss */
+#content {
+  padding-top: 100px;
 }
-/* line 17, ../sass/partials/_default.scss */
-#masthead .wrapper {
+
+/* line 16, ../sass/partials/_default.scss */
+#top {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* line 20, ../sass/partials/_default.scss */
+#masthead {
+  padding-bottom: 72px;
+}
+/* line 23, ../sass/partials/_default.scss */
+#masthead #identity {
   display: block;
   color: inherit;
+  background-image: url('/static/images/logo.png?1322125095');
+  background-position: right top;
+  background-repeat: no-repeat;
 }
-/* line 21, ../sass/partials/_default.scss */
-#masthead .wrapper:hover {
+/* line 30, ../sass/partials/_default.scss */
+#masthead #identity:hover {
   -moz-box-shadow: rgba(0, 0, 0, 0.04) 0 0 0 20px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0 0 0 20px;
   -o-box-shadow: rgba(0, 0, 0, 0.04) 0 0 0 20px;
   box-shadow: rgba(0, 0, 0, 0.04) 0 0 0 20px;
 }
-/* line 26, ../sass/partials/_default.scss */
+/* line 35, ../sass/partials/_default.scss */
 #masthead h1 {
   line-height: 1;
   font-weight: bold;
 }
-/* line 32, ../sass/partials/_default.scss */
+/* line 41, ../sass/partials/_default.scss */
 #masthead h2 {
   color: #AAA;
 }
 
-/* line 37, ../sass/partials/_default.scss */
+/* line 46, ../sass/partials/_default.scss */
 a {
   color: #8ac616;
   text-decoration: none;
+  -moz-transition-property: color background box-shadow;
+  -webkit-transition-property: color background box-shadow;
+  -o-transition-property: color background box-shadow;
+  transition-property: color background box-shadow;
+  -moz-transition-duration: 200ms;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
-/* line 41, ../sass/partials/_default.scss */
+/* line 51, ../sass/partials/_default.scss */
 a:hover {
   color: #84be15;
   background: rgba(0, 0, 0, 0.04);
@@ -175,16 +196,75 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.04) 0 0 0 3px;
 }
 
-/* line 48, ../sass/partials/_default.scss */
+/* line 58, ../sass/partials/_default.scss */
+#nav {
+  position: absolute;
+  top: 0;
+}
+/* line 62, ../sass/partials/_default.scss */
+#nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  margin-left: -1px;
+  padding-left: 1px;
+  padding-bottom: 1px;
+}
+/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+#nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#nav ul li {
+  *display: inline;
+}
+/* line 68, ../sass/partials/_default.scss */
+#nav ul li {
+  vertical-align: top;
+}
+/* line 71, ../sass/partials/_default.scss */
+#nav ul li.active {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
+  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
+}
+/* line 76, ../sass/partials/_default.scss */
+#nav ul li.active a:hover {
+  background: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+/* line 82, ../sass/partials/_default.scss */
+#nav ul li a {
+  display: block;
+  padding: 2px 12px 4px;
+}
+
+/* line 90, ../sass/partials/_default.scss */
 article {
   margin: 2em 0 4em 0;
 }
-/* line 51, ../sass/partials/_default.scss */
+/* line 93, ../sass/partials/_default.scss */
 article p {
   max-width: 100%;
   overflow: hidden;
 }
-/* line 56, ../sass/partials/_default.scss */
+/* line 98, ../sass/partials/_default.scss */
 article .meta {
   text-transform: uppercase;
   font-size: 70%;
@@ -192,14 +272,13 @@ article .meta {
   color: #BBB;
   text-shadow: none;
 }
-/* line 64, ../sass/partials/_default.scss */
+/* line 106, ../sass/partials/_default.scss */
 article .date, article .tag {
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px inset;
-  box-shadow: rgba(0, 0, 0, 0.1) -1px 1px inset;
-  background: #F9F9F9;
-  background: #F9F9F9;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+  -o-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
+  background-color: #FFF;
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -210,43 +289,51 @@ article .date, article .tag {
 article .date, article .tag {
   *display: inline;
 }
-/* line 71, ../sass/partials/_default.scss */
+/* line 112, ../sass/partials/_default.scss */
 article .date {
   padding: 0 8px 0 2000px;
   margin-left: -1999px;
 }
-/* line 76, ../sass/partials/_default.scss */
+/* line 117, ../sass/partials/_default.scss */
 article .tag {
   padding: 0 8px 0 7px;
   font-weight: normal;
   color: inherit;
+  -moz-transition-property: background-color color;
+  -webkit-transition-property: background-color color;
+  -o-transition-property: background-color color;
+  transition-property: background-color color;
+  -moz-transition-duration: 2000ms;
+  -webkit-transition-duration: 2000ms;
+  -o-transition-duration: 2000ms;
+  transition-duration: 2000ms;
 }
-/* line 81, ../sass/partials/_default.scss */
+/* line 123, ../sass/partials/_default.scss */
 article .tag:hover {
-  background: #DDD;
+  background-color: #DDD;
   color: #FFF;
 }
-/* line 87, ../sass/partials/_default.scss */
+/* line 129, ../sass/partials/_default.scss */
 article h1 {
   margin: 0.2em 0;
 }
-/* line 91, ../sass/partials/_default.scss */
+/* line 133, ../sass/partials/_default.scss */
 article img {
   display: block;
   max-width: 100%;
 }
 
-/* line 97, ../sass/partials/_default.scss */
+/* line 139, ../sass/partials/_default.scss */
 p, img, div.highlight, ul, ol, dl, img.photo {
   margin: 1em 0;
 }
 
-/* line 101, ../sass/partials/_default.scss */
+/* line 143, ../sass/partials/_default.scss */
 ul, ol {
   margin-left: 2em;
 }
 
-/* line 105, ../sass/partials/_default.scss */
+/* line 147, ../sass/partials/_default.scss */
 code {
   text-shadow: none;
   color: #888;
@@ -259,7 +346,7 @@ code {
   border-radius: 2px;
 }
 
-/* line 112, ../sass/partials/_default.scss */
+/* line 154, ../sass/partials/_default.scss */
 img.photo {
   display: block;
   -moz-box-shadow: white 0 0 0 6px;
@@ -268,7 +355,39 @@ img.photo {
   box-shadow: white 0 0 0 6px;
 }
 
-/* line 117, ../sass/partials/_default.scss */
+/* line 160, ../sass/partials/_default.scss */
+body.clients h3, body.projects h3 {
+  margin-top: 2em;
+}
+/* line 164, ../sass/partials/_default.scss */
+body.clients p, body.projects p {
+  margin-top: 0;
+}
+/* line 168, ../sass/partials/_default.scss */
+body.clients a.lightbox, body.projects a.lightbox {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+body.clients a.lightbox, body.projects a.lightbox {
+  *display: inline;
+}
+/* line 171, ../sass/partials/_default.scss */
+body.clients a.lightbox img, body.projects a.lightbox img {
+  margin: 0;
+}
+/* line 176, ../sass/partials/_default.scss */
+body.clients #fancybox-close, body.projects #fancybox-close {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 183, ../sass/partials/_default.scss */
 #dsq-global-toolbar, .dsq-tooltip-small {
   text-shadow: none;
 }

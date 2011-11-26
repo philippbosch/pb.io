@@ -3,20 +3,29 @@
  * Outer margins: 48px.
  * Leftover space for scrollbars @1024px: 32px.  */
 
-$green: #8AC616;
-
-#{$less-grid-element} {
+#masthead, #content {
     @include grid(10);
     margin: 0 auto;
+    position: relative;
+}
+
+#content {
+    padding-top: 100px;
+}
+
+#top {
+    background: rgba(#FFF, 0.6);
 }
 
 #masthead {
-    margin-bottom: 4em;
-    background: image-url("logo.png") right center no-repeat;
+    padding-bottom: 72px;
     
-    .wrapper {
+    #identity {
         display: block;
         color: inherit;
+        background-image: image-url("logo.png");
+        background-position: right top;
+        background-repeat: no-repeat;
         
         &:hover {
             @include box-shadow(rgba(#000, 0.04) 0 0 0 20px);
@@ -37,11 +46,44 @@ $green: #8AC616;
 a {
     color: $green;
     text-decoration: none;
+    @include single-transition(color background box-shadow, 200ms);
     
     &:hover {
         color: mix($green, #000, 96%);
         background: rgba(#000, 0.04);
         @include box-shadow(rgba(#000, 0.04) 0 0 0 3px);
+    }
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    
+    ul {
+        @include inline-block-list;
+        margin-left: -1px;
+        padding-left: 1px;
+        padding-bottom: 1px;
+        
+        li {
+            vertical-align: top;
+            
+            &.active {
+                font-weight: bold;
+                background: rgba(#FFF, 0.6);
+                @include box-shadow(rgba(#000, 0.1) 0 0 1px);
+                
+                a:hover {
+                    background: transparent;
+                    @include box-shadow(none);
+                }
+            }
+            
+            a {
+                display: block;
+                padding: 2px 12px 4px;
+            }
+        }
     }
 }
 
@@ -62,9 +104,8 @@ article {
     }
     
     .date, .tag {
-        @include box-shadow(rgba(#000, 0.1) -1px 1px inset);
-        background: #F9F9F9;
-        background: #F9F9F9;
+        @include box-shadow(rgba(#000, 0.05) 1px 1px);
+        background-color: #FFF;
         @include inline-block;
     }
     
@@ -77,9 +118,10 @@ article {
         padding: 0 8px 0 7px;
         font-weight: normal;
         color: inherit;
+        @include single-transition(background-color color, 2000ms);
         
         &:hover {
-            background: #DDD;
+            background-color: #DDD;
             color: #FFF;
         }
     }
@@ -113,6 +155,30 @@ img.photo {
     display: block;
     @include box-shadow(#FFF 0 0 0 6px);
 }
+
+body.clients, body.projects {
+    h3 {
+        margin-top: 2em;
+    }
+    
+    p {
+        margin-top: 0;
+    }
+    
+    a.lightbox {
+        @include inline-block;
+        
+        img {
+            margin: 0;
+        }
+    }
+    
+    #fancybox-close {
+        @include box-shadow(none);
+    }
+}
+
+
 
 #dsq-global-toolbar, .dsq-tooltip-small {
     @include text-shadow(none);

@@ -18,6 +18,9 @@ nav: blog
     
     <g:plusone size="medium" count="true" href="http://pb.io{{ page.url }}"></g:plusone>
     <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pb.io{{ page.url }}" data-count="compact" data-via="philippbosch" data-width="80px">Tweet</a>
+    <a class="FlattrButton" style="display:none;" title="{{ page.title }}" data-flattr-uid="philippbosch" data-flattr-tags="{{ page.tags|join:", "}}" data-flattr-category="text" href="http://localhost{{ page.url }}">
+        {{ page.content|before_fold|strip_html }}
+    </a>
 </article>
 
 <footer id="comments">

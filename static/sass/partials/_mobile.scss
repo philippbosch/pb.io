@@ -4,7 +4,7 @@
  * Inherits styles from: Default Layout.  */
 
 @media only screen and (max-width: 767px) {
-    #{$less-grid-element} {
+    #masthead, #content {
         @include grid(3);
     }
     
@@ -14,7 +14,9 @@
     }
     
     #masthead {
-        background-image: image-url("logo-small.png");
+        #identity {
+            background-image: image-url("logo-small.png");
+        }
         
         h1 {
             font-size: 26px;
@@ -26,10 +28,27 @@
         }
     }
     
+    #nav {
+        ul {
+            li {
+                a {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+    
     article {
         h1 {
             font-size: 24px;
             line-height: 32px;
         }
+    }
+    
+    img.left, img.right {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
     }
 }

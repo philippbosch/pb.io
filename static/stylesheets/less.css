@@ -482,7 +482,7 @@ ul.skills li a:hover {
  * Inherits styles from: Default Layout.  */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 7, ../sass/partials/_tablet.scss */
-  body {
+  #masthead, #content {
     width: 712px;
     padding: 48px 28px 60px;
   }
@@ -493,7 +493,7 @@ ul.skills li a:hover {
  * Inherits styles from: Default Layout.  */
 @media only screen and (max-width: 767px) {
   /* line 7, ../sass/partials/_mobile.scss */
-  body {
+  #masthead, #content {
     width: 252px;
     padding: 48px 34px 60px;
   }
@@ -504,24 +504,37 @@ ul.skills li a:hover {
     line-height: 21px;
   }
 
-  /* line 16, ../sass/partials/_mobile.scss */
-  #masthead {
+  /* line 17, ../sass/partials/_mobile.scss */
+  #masthead #identity {
     background-image: url('/static/images/logo-small.png?1322125095');
   }
-  /* line 19, ../sass/partials/_mobile.scss */
+  /* line 21, ../sass/partials/_mobile.scss */
   #masthead h1 {
     font-size: 26px;
   }
-  /* line 23, ../sass/partials/_mobile.scss */
+  /* line 25, ../sass/partials/_mobile.scss */
   #masthead h2 {
     font-size: 13px;
     line-height: inherit;
   }
 
-  /* line 30, ../sass/partials/_mobile.scss */
+  /* line 34, ../sass/partials/_mobile.scss */
+  #nav ul li a {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* line 43, ../sass/partials/_mobile.scss */
   article h1 {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  /* line 49, ../sass/partials/_mobile.scss */
+  img.left, img.right {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /* Wide Mobile Layout: 480px.
@@ -530,7 +543,7 @@ ul.skills li a:hover {
  * Inherits styles from: Default Layout, Mobile Layout.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* line 7, ../sass/partials/_wide-mobile.scss */
-  body {
+  #masthead, #content {
     width: 436px;
     padding: 36px 22px 48px;
   }
@@ -544,8 +557,8 @@ ul.skills li a:hover {
    Overrides styles for devices with a
    device-pixel-ratio of 2+, such as iPhone 4.  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 9, ../sass/partials/_high-px-ratio.scss */
-  #masthead {
+  /* line 6, ../sass/partials/_high-px-ratio.scss */
+  #identity {
     background-image: url('/static/images/logo.png?1322125095');
     -moz-background-size: 68px 40px;
     -webkit-background-size: 68px 40px;

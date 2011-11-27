@@ -15,9 +15,13 @@ nav: blog
         <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
     </header>
     {{ content }}
+    
+    <g:plusone size="medium" count="true" href="http://pb.io{{ page.url }}"></g:plusone>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://pb.io{{ page.url }}" data-count="compact" data-via="philippbosch" data-width="80px">Tweet</a>
 </article>
 
 <footer id="comments">
+    
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_identifier = 'post-{{ page.id }}';

@@ -6,9 +6,14 @@ nav: projects
 Projects
 ========
 
-These are some Open Source projects of mine.  
+These are some non-client projects of mine.  
 More projects and contributions to other projects can be found on [Github](http://github.com/philippbosch/).
 
+
+### westost.io
+
+A simple mobile web app that, given you are in Berlin, tells you on which side of the Berlin Wall you would be if it still existed.
+[westost.io](http://westost.io/)
 
 ### haz.io
 

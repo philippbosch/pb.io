@@ -156,6 +156,16 @@ img.photo {
     @include box-shadow(#FFF 0 0 0 6px);
 }
 
+img.left {
+    float: left;
+    margin-right: 24px;
+}
+
+img.right {
+    float: right;
+    margin-left: 24px;
+}
+
 body.clients, body.projects {
     h3 {
         margin-top: 2em;

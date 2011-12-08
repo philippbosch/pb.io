@@ -2,13 +2,14 @@ $green: #8AC616;
 
 h1 {
     @extend .large;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     font-weight: normal;
 }
 
 h2 {
     @extend .bigger;
     font-weight: normal;
+    letter-spacing: -1px;
 }
 
 h3 {
@@ -23,10 +24,14 @@ small {
     @extend .small;
 }
 
+strong {
+    font-weight: 700;
+}
+
 body {
     background: #FFF image-url("bg.png");
-    color: #4D4D4D;
-    font-family: "Helvetica Neue", sans-serif;
+    color: #666;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
     // Stops Mobile Safari from auto-adjusting font-sizes
     -webkit-text-size-adjust: 100%;
     @include text-shadow(#FFF 0 1px);

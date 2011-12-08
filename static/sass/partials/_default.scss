@@ -218,9 +218,9 @@ ul.skills {
 }
 
 #bottom {
+    position: relative;
     background: #4D4D4D;
     @include background(
-        linear-gradient(top, rgba(#000, 0.2), rgba(#000, 0) 5%),
         linear-gradient(top, rgba(#FFF, 0.2), rgba(#FFF, 0.2)),
         image-url('footer-bg.png')
     );
@@ -240,6 +240,16 @@ ul.skills {
             @include box-shadow(rgba(#000, 0.2) 0 0 0 3px);
         }
     }
+    
+    &:before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 4px;
+        content: "";
+        @include background(linear-gradient(top, rgba(#000, 0.3), rgba(#000, 0)))
+    }
 }
 
 #elsewhere {
@@ -247,6 +257,7 @@ ul.skills {
     list-style: none;
     padding: 0;
     @include inline-block-list;
+    line-height: 1.2;
     
     li {
         margin: 0 4px;

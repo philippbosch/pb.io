@@ -3,8 +3,18 @@
    device-pixel-ratio of 2+, such as iPhone 4.  */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-    #identity {
-        background-image: image-url("logo.png");
-        @include background-size(68px 40px);
+    body {
+        @include background-size(50px 50px);
+    }
+    
+    #masthead {
+        #identity {
+            background-image: image-url("logo.png");
+            @include background-size(68px 40px);
+        }
+    }
+    
+    #bottom {
+        @include background-size(51px 51px);
     }
 }

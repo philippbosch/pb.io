@@ -484,13 +484,14 @@ ul.skills li a:hover {
 
 /* line 220, ../sass/partials/_default.scss */
 #bottom {
+  position: relative;
   background: #4D4D4D;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(5%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0.2))), url('/static/images/footer-bg.png?1323361430');
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
-  background: linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0.2))), url('/static/images/footer-bg.png?1323361430');
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
   text-align: center;
   padding: 36px 24px;
   color: #888;
@@ -509,8 +510,23 @@ ul.skills li a:hover {
   -o-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 3px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 3px;
 }
+/* line 244, ../sass/partials/_default.scss */
+#bottom:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  content: "";
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
 
-/* line 245, ../sass/partials/_default.scss */
+/* line 255, ../sass/partials/_default.scss */
 #elsewhere {
   margin: 0;
   list-style: none;
@@ -520,6 +536,7 @@ ul.skills li a:hover {
   border: 0;
   overflow: hidden;
   *zoom: 1;
+  line-height: 1.2;
 }
 /* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
 #elsewhere li {
@@ -537,7 +554,7 @@ ul.skills li a:hover {
 #elsewhere li {
   *display: inline;
 }
-/* line 251, ../sass/partials/_default.scss */
+/* line 262, ../sass/partials/_default.scss */
 #elsewhere li {
   margin: 0 4px;
   padding: 0px 4px;
@@ -625,11 +642,27 @@ ul.skills li a:hover {
    device-pixel-ratio of 2+, such as iPhone 4.  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 6, ../sass/partials/_high-px-ratio.scss */
-  #identity {
+  body {
+    -moz-background-size: 50px 50px;
+    -webkit-background-size: 50px 50px;
+    -o-background-size: 50px 50px;
+    background-size: 50px 50px;
+  }
+
+  /* line 11, ../sass/partials/_high-px-ratio.scss */
+  #masthead #identity {
     background-image: url('/static/images/logo.png?1322125095');
     -moz-background-size: 68px 40px;
     -webkit-background-size: 68px 40px;
     -o-background-size: 68px 40px;
     background-size: 68px 40px;
+  }
+
+  /* line 17, ../sass/partials/_high-px-ratio.scss */
+  #bottom {
+    -moz-background-size: 51px 51px;
+    -webkit-background-size: 51px 51px;
+    -o-background-size: 51px 51px;
+    background-size: 51px 51px;
   }
 }

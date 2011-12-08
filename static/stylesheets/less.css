@@ -141,7 +141,12 @@ body {
 
 /* line 16, ../sass/partials/_default.scss */
 #top {
-  background: rgba(255, 255, 255, 0.6);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  background: linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 }
 
 /* line 20, ../sass/partials/_default.scss */
@@ -181,10 +186,10 @@ a {
   -webkit-transition-property: color background box-shadow;
   -o-transition-property: color background box-shadow;
   transition-property: color background box-shadow;
-  -moz-transition-duration: 200ms;
-  -webkit-transition-duration: 200ms;
-  -o-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -moz-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 /* line 51, ../sass/partials/_default.scss */
 a:hover {
@@ -208,7 +213,7 @@ a:hover {
   border: 0;
   overflow: hidden;
   *zoom: 1;
-  margin-left: -1px;
+  margin-left: -12px;
   padding-left: 1px;
   padding-bottom: 1px;
 }
@@ -235,36 +240,30 @@ a:hover {
 /* line 71, ../sass/partials/_default.scss */
 #nav ul li.active {
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.6);
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px;
 }
-/* line 76, ../sass/partials/_default.scss */
+/* line 74, ../sass/partials/_default.scss */
 #nav ul li.active a:hover {
-  background: transparent;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
 }
-/* line 82, ../sass/partials/_default.scss */
+/* line 79, ../sass/partials/_default.scss */
 #nav ul li a {
   display: block;
   padding: 2px 12px 4px;
 }
 
-/* line 90, ../sass/partials/_default.scss */
+/* line 87, ../sass/partials/_default.scss */
 article {
   margin: 2em 0 4em 0;
 }
-/* line 93, ../sass/partials/_default.scss */
+/* line 90, ../sass/partials/_default.scss */
 article p {
   max-width: 100%;
   overflow: hidden;
 }
-/* line 98, ../sass/partials/_default.scss */
+/* line 95, ../sass/partials/_default.scss */
 article .meta {
   text-transform: uppercase;
   font-size: 70%;
@@ -272,7 +271,7 @@ article .meta {
   color: #BBB;
   text-shadow: none;
 }
-/* line 106, ../sass/partials/_default.scss */
+/* line 103, ../sass/partials/_default.scss */
 article .date, article .tag {
   -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
@@ -290,12 +289,12 @@ article .date, article .tag {
 article .date, article .tag {
   *display: inline;
 }
-/* line 113, ../sass/partials/_default.scss */
+/* line 110, ../sass/partials/_default.scss */
 article .date {
   padding: 0 8px 0 2000px;
   margin-left: -1999px;
 }
-/* line 118, ../sass/partials/_default.scss */
+/* line 115, ../sass/partials/_default.scss */
 article .tag {
   font-weight: normal;
   color: inherit;
@@ -303,37 +302,37 @@ article .tag {
   -webkit-transition-property: background-color color;
   -o-transition-property: background-color color;
   transition-property: background-color color;
-  -moz-transition-duration: 2000ms;
-  -webkit-transition-duration: 2000ms;
-  -o-transition-duration: 2000ms;
-  transition-duration: 2000ms;
+  -moz-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
-/* line 123, ../sass/partials/_default.scss */
+/* line 120, ../sass/partials/_default.scss */
 article .tag:hover {
   background-color: #DDD;
   color: #FFF;
 }
-/* line 129, ../sass/partials/_default.scss */
+/* line 126, ../sass/partials/_default.scss */
 article h1 {
   margin: 0.2em 0;
 }
-/* line 133, ../sass/partials/_default.scss */
+/* line 130, ../sass/partials/_default.scss */
 article img {
   display: block;
   max-width: 100%;
 }
 
-/* line 139, ../sass/partials/_default.scss */
+/* line 136, ../sass/partials/_default.scss */
 p, img, div.highlight, ul, ol, dl, img.photo {
   margin: 1em 0;
 }
 
-/* line 143, ../sass/partials/_default.scss */
+/* line 140, ../sass/partials/_default.scss */
 ul, ol {
   margin-left: 2em;
 }
 
-/* line 147, ../sass/partials/_default.scss */
+/* line 144, ../sass/partials/_default.scss */
 code {
   text-shadow: none;
   color: #888;
@@ -346,7 +345,7 @@ code {
   border-radius: 2px;
 }
 
-/* line 154, ../sass/partials/_default.scss */
+/* line 151, ../sass/partials/_default.scss */
 img.photo {
   display: block;
   -moz-box-shadow: white 0 0 0 6px;
@@ -355,27 +354,27 @@ img.photo {
   box-shadow: white 0 0 0 6px;
 }
 
-/* line 159, ../sass/partials/_default.scss */
+/* line 156, ../sass/partials/_default.scss */
 img.left {
   float: left;
   margin-right: 24px;
 }
 
-/* line 164, ../sass/partials/_default.scss */
+/* line 161, ../sass/partials/_default.scss */
 img.right {
   float: right;
   margin-left: 24px;
 }
 
-/* line 170, ../sass/partials/_default.scss */
+/* line 167, ../sass/partials/_default.scss */
 body.clients h3, body.projects h3 {
   margin-top: 2em;
 }
-/* line 174, ../sass/partials/_default.scss */
+/* line 171, ../sass/partials/_default.scss */
 body.clients p, body.projects p {
   margin-top: 0;
 }
-/* line 178, ../sass/partials/_default.scss */
+/* line 175, ../sass/partials/_default.scss */
 body.clients a.lightbox, body.projects a.lightbox {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -387,11 +386,11 @@ body.clients a.lightbox, body.projects a.lightbox {
 body.clients a.lightbox, body.projects a.lightbox {
   *display: inline;
 }
-/* line 181, ../sass/partials/_default.scss */
+/* line 178, ../sass/partials/_default.scss */
 body.clients a.lightbox img, body.projects a.lightbox img {
   margin: 0;
 }
-/* line 186, ../sass/partials/_default.scss */
+/* line 183, ../sass/partials/_default.scss */
 body.clients #fancybox-close, body.projects #fancybox-close {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -399,7 +398,7 @@ body.clients #fancybox-close, body.projects #fancybox-close {
   box-shadow: none;
 }
 
-/* line 191, ../sass/partials/_default.scss */
+/* line 188, ../sass/partials/_default.scss */
 ul.skills {
   margin: 0;
   padding: 0;
@@ -425,7 +424,7 @@ ul.skills li {
 ul.skills li {
   *display: inline;
 }
-/* line 196, ../sass/partials/_default.scss */
+/* line 193, ../sass/partials/_default.scss */
 ul.skills li {
   -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px;
@@ -446,7 +445,7 @@ ul.skills li {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 202, ../sass/partials/_default.scss */
+/* line 199, ../sass/partials/_default.scss */
 ul.skills li:hover {
   -moz-transform: scale(2, 2);
   -webkit-transform: scale(2, 2);
@@ -458,11 +457,11 @@ ul.skills li:hover {
   -o-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
 }
-/* line 207, ../sass/partials/_default.scss */
+/* line 204, ../sass/partials/_default.scss */
 ul.skills li a {
   display: block;
 }
-/* line 210, ../sass/partials/_default.scss */
+/* line 207, ../sass/partials/_default.scss */
 ul.skills li a:hover {
   background: transparent;
   -moz-box-shadow: none;
@@ -471,7 +470,7 @@ ul.skills li a:hover {
   box-shadow: none;
 }
 
-/* line 218, ../sass/partials/_default.scss */
+/* line 215, ../sass/partials/_default.scss */
 #dsq-global-toolbar, .dsq-tooltip-small {
   text-shadow: none;
 }

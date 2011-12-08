@@ -14,7 +14,7 @@
 }
 
 #top {
-    background: rgba(#FFF, 0.6);
+    @include background(linear-gradient(top, rgba(#FFF, 0.8), rgba(#FFF, 0)));
 }
 
 #masthead {
@@ -46,7 +46,7 @@
 a {
     color: $green;
     text-decoration: none;
-    @include single-transition(color background box-shadow, 200ms);
+    @include single-transition(color background box-shadow, 300ms);
     
     &:hover {
         color: mix($green, #000, 96%);
@@ -61,7 +61,7 @@ a {
     
     ul {
         @include inline-block-list;
-        margin-left: -1px;
+        margin-left: -12px;
         padding-left: 1px;
         padding-bottom: 1px;
         
@@ -70,11 +70,8 @@ a {
             
             &.active {
                 font-weight: bold;
-                background: rgba(#FFF, 0.6);
-                @include box-shadow(rgba(#000, 0.1) 0 0 1px);
                 
                 a:hover {
-                    background: transparent;
                     @include box-shadow(none);
                 }
             }
@@ -118,7 +115,7 @@ article {
     .tag {
         font-weight: normal;
         color: inherit;
-        @include single-transition(background-color color, 2000ms);
+        @include single-transition(background-color color, 300ms);
         
         &:hover {
             background-color: #DDD;

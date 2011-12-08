@@ -482,6 +482,67 @@ ul.skills li a:hover {
   text-shadow: none;
 }
 
+/* line 220, ../sass/partials/_default.scss */
+#bottom {
+  background: #4D4D4D;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(5%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0.2))), url('/static/images/footer-bg.png?1323361430');
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  background: linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5%), linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
+  text-align: center;
+  padding: 36px 24px;
+  color: #888;
+  text-shadow: black 0 1px;
+  font-size: 80%;
+}
+/* line 233, ../sass/partials/_default.scss */
+#bottom p {
+  margin: 0;
+}
+/* line 238, ../sass/partials/_default.scss */
+#bottom a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 3px;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 3px;
+}
+
+/* line 245, ../sass/partials/_default.scss */
+#elsewhere {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+#elsewhere li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#elsewhere li {
+  *display: inline;
+}
+/* line 251, ../sass/partials/_default.scss */
+#elsewhere li {
+  margin: 0 4px;
+  padding: 0px 4px;
+}
+
 /* Tablet Layout: 768px.
  * Gutters: 24px.
  * Outer margins: 28px.

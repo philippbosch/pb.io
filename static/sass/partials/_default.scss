@@ -216,3 +216,40 @@ ul.skills {
 #dsq-global-toolbar, .dsq-tooltip-small {
     @include text-shadow(none);
 }
+
+#bottom {
+    background: #4D4D4D;
+    @include background(
+        linear-gradient(top, rgba(#000, 0.2), rgba(#000, 0) 5%),
+        linear-gradient(top, rgba(#FFF, 0.2), rgba(#FFF, 0.2)),
+        image-url('footer-bg.png')
+    );
+    text-align: center;
+    padding: 36px 24px;
+    color: #888;
+    @include text-shadow(#000 0 1px);
+    font-size: 80%;
+    
+    p {
+        margin: 0;
+    }
+    
+    a {
+        &:hover {
+            background: rgba(#000, 0.2);
+            @include box-shadow(rgba(#000, 0.2) 0 0 0 3px);
+        }
+    }
+}
+
+#elsewhere {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    @include inline-block-list;
+    
+    li {
+        margin: 0 4px;
+        padding: 0px 4px;
+    }
+}

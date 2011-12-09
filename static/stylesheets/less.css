@@ -493,7 +493,7 @@ ul.skills li a:hover {
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
   background: linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/static/images/footer-bg.png?1323361430');
   text-align: center;
-  padding: 36px 24px;
+  padding: 24px;
   color: #888;
   text-shadow: black 0 1px;
   font-size: 80%;
@@ -528,15 +528,14 @@ ul.skills li a:hover {
 
 /* line 255, ../sass/partials/_default.scss */
 #elsewhere {
-  margin: 0;
   list-style: none;
+  margin: 0;
   padding: 0;
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
   *zoom: 1;
-  line-height: 1.2;
 }
 /* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
 #elsewhere li {
@@ -554,7 +553,7 @@ ul.skills li a:hover {
 #elsewhere li {
   *display: inline;
 }
-/* line 262, ../sass/partials/_default.scss */
+/* line 261, ../sass/partials/_default.scss */
 #elsewhere li {
   margin: 0 4px;
   padding: 0px 4px;
@@ -608,13 +607,18 @@ ul.skills li a:hover {
     padding-right: 8px;
   }
 
-  /* line 43, ../sass/partials/_mobile.scss */
+  /* line 42, ../sass/partials/_mobile.scss */
+  #elsewhere {
+    margin-bottom: 1em;
+  }
+
+  /* line 47, ../sass/partials/_mobile.scss */
   article h1 {
     font-size: 24px;
     line-height: 32px;
   }
 
-  /* line 49, ../sass/partials/_mobile.scss */
+  /* line 53, ../sass/partials/_mobile.scss */
   img.left, img.right {
     float: none;
     margin-left: 0;

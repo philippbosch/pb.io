@@ -22,13 +22,8 @@ Web developer tool to check HTML5/CSS3 capabilities of a specific browser.
 
 ### inject.io *(soon)*
 
-Easy document creation using Markdown, CDN-based hosting and embedding in Websites.  
+Easy document creation using Markdown, CDN-based hosting and embedding in static websites.  
 [inject.io](http://inject.io/)
-
-### keycoder *(in progress)*
-
-Web developer tool to easily get keycodes and charcodes for keypress events.  
-[code.pb.io/keycoder/](http://code.pb.io/keycoder/)
 
 ### compass-facebox-plugin
 

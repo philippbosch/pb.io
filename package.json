@@ -1,0 +1,32 @@
+{
+  "name": "pb.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently 'npm run dev:html' 'npm run dev:css' 'npm run dev:images' 'npm run dev:fonts' 'npm run dev:server'",
+    "dev:html": "fswatch -o src/index.jsx | xargs -n1 -I{} node render-html.js",
+    "dev:css": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch",
+    "dev:images": "cp -R src/images dist/",
+    "dev:fonts": "cp -R src/fonts dist/",
+    "dev:server": "web-dev-server --root-dir ./dist --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philippbosch/pb.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philippbosch/pb.io/issues"
+  },
+  "homepage": "https://github.com/philippbosch/pb.io#readme",
+  "devDependencies": {
+    "@web/dev-server": "0.1.30",
+    "concurrently": "7.1.0",
+    "jsx-template-engine": "1.0.0",
+    "tailwindcss": "3.0.23",
+    "tailwindcss-hyphens": "0.1.0"
+  }
+}

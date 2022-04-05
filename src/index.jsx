@@ -8,7 +8,7 @@ export default () => {
         <link href="css/styles.css" rel="stylesheet" />
       </head>
       <body className="font-calluna text-gray-500 bg-gray-900 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 bg-fixed">
-        <div className="container mx-auto my-16 md:my-32 lg:my-48 px-8 space-y-24 lg:space-y-32 xl:space-y-48">
+        <div className="container mx-auto my-16 md:my-32 lg:my-48 px-8 md:px-16 space-y-24 lg:space-y-32 xl:space-y-48">
           <header className="flex items-center space-x-4 lg:space-x-8">
             <img
               src="images/philipp-bosch.jpg"
@@ -104,17 +104,14 @@ export default () => {
             </section>
             <section className="space-y-4 flex-1">
               <h1 className="text-2xl lg:text-3xl text-white">
-                Current Projects
+                Current Project
               </h1>
-              <a
-                href="https://www.weg.plus/"
-                className="flex items-start space-x-6"
-              >
+              <a href="https://www.weg.plus/" className="block">
                 <svg
                   viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlSpace="preserve"
-                  className="w-16 h-16 rounded-xl mt-1.5 shrink-0"
+                  className="w-16 h-16 rounded-xl mt-1.5 mr-4 mb-2 shrink-0 float-left"
                 >
                   <path style="fill: #fff" d="M0 0h1024v1024H0z" />
                   <path
@@ -129,7 +126,7 @@ export default () => {
                 <div>
                   <h2 className="text-2xl text-white">WEG+</h2>
                   <p className="hyphens-auto">
-                    Online platform for appartment owners and property managers
+                    Online platform for apartment owners and property managers
                     to improve communication, transparency and efficiency within
                     owners associations (WEG).
                   </p>

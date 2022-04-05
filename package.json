@@ -6,10 +6,15 @@
   "scripts": {
     "dev": "concurrently 'npm run dev:html' 'npm run dev:css' 'npm run dev:images' 'npm run dev:fonts' 'npm run dev:server'",
     "dev:html": "fswatch -o src/index.jsx | xargs -n1 -I{} node render-html.js",
-    "dev:css": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch",
+    "dev:css": "tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch",
     "dev:images": "cp -R src/images dist/",
     "dev:fonts": "cp -R src/fonts dist/",
-    "dev:server": "web-dev-server --root-dir ./dist --open --watch"
+    "dev:server": "web-dev-server --root-dir ./dist --open --watch",
+    "build": "npm run build:html && npm run build:css && npm run build:images && npm run build:fonts",
+    "build:html": "node render-html.js",
+    "build:css": "tailwindcss --minify -i ./src/css/styles.css -o ./dist/css/styles.css",
+    "build:images": "cp -R src/images dist/",
+    "build:fonts": "cp -R src/fonts dist/"
   },
   "repository": {
     "type": "git",

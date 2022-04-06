@@ -5,6 +5,10 @@ export default () => {
         <meta charset="UTF-8" />
         <title>Philipp Bosch &middot; Software Developer &middot; Berlin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Philipp Bosch is a freelance software developer based in Berlin with a focus on the web platform"
+        />
         <link href="css/styles.css" rel="stylesheet" />
       </head>
       <body className="font-calluna text-gray-500 bg-gray-900 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 bg-fixed">

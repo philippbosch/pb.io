@@ -10,6 +10,11 @@ export default () => {
           content="Philipp Bosch is a freelance software developer based in Berlin with a focus on the web platform"
         />
         <link href="css/styles.css" rel="stylesheet" />
+        <script
+          defer
+          data-domain="pb.io"
+          src="https://plausible.io/js/plausible.js"
+        ></script>
       </head>
       <body className="font-calluna text-gray-500 bg-gray-900 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 bg-fixed">
         <div className="container mx-auto my-16 md:my-32 lg:my-48 px-8 md:px-16 space-y-24 lg:space-y-32 xl:space-y-48">

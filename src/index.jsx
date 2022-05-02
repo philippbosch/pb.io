@@ -9,6 +9,7 @@ export default () => {
           name="description"
           content="Philipp Bosch is a freelance software developer based in Berlin with a focus on the web platform"
         />
+        <meta name="theme-color" content="#1c1917" />
         <link href="css/styles.css" rel="stylesheet" />
         <script
           defer

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "CallunaSans";
+  src: url("/fonts/callunasansregular-webfont.woff2") format("woff2"),
+    url("/fonts/callunasansregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CallunaSans";
+  src: url("/fonts/callunasansbold-webfont.woff2") format("woff2"),
+    url("/fonts/callunasansbold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

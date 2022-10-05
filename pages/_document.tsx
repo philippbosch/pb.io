@@ -18,6 +18,7 @@ export default function Document() {
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        <meta name="theme-color" content="#1c1917" />
       </Head>
       <body className="font-calluna text-gray-400 bg-gray-900 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 bg-fixed">
         <Main />

@@ -50,7 +50,7 @@ const CV: NextPage = () => {
       <section className="flex-2 space-y-16">
         <div>
           <H1>Profil</H1>
-          <p className="text-lg">
+          <p className="text-lg hyphens-auto sm:hyphens-none">
             Ich bin seit mehr als 20 Jahren Softwareentwickler und vorwiegend im
             Bereich Web &amp; Mobile tätig. Dabei habe ich in verschiedenen
             Konstellationen gearbeitet: als Gründer und Geschäftsführer/CTO in

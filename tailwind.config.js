@@ -26,6 +26,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwindcss-hyphens'),
     plugin(({ addUtilities }) => {
       addUtilities({
         '.all-small-caps': {

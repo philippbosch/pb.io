@@ -17,7 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
           <h1 className="text-2xl lg:text-5xl font-bold text-white">
             Philipp Bosch
           </h1>
-          <h2 className="-mt-1.5 lg:mt-0 text-2xl lg:text-5xl text-gray-500">
+          <h2 className="-mt-1.5 lg:mt-0 text-2xl lg:text-5xl text-gray-400">
             Software Developer
           </h2>
           <div className="mt-2 flex text-sm lg:text-lg space-x-3 lg:space-x-6">

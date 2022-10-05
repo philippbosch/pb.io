@@ -197,10 +197,11 @@ const CV: NextPage = () => {
           <p className="text-lg hyphens-auto sm:hyphens-none">
             Ich bin seit mehr als 20 Jahren Softwareentwickler und vorwiegend im
             Bereich Web &amp; Mobile tätig. Dabei habe ich in verschiedenen
-            Konstellationen gearbeitet: als Gründer und Geschäftsführer/CTO in
-            zwei Unternehmen, als Web-Entwickler bei einer Designagentur, als
-            Freelancer für Agenturen und andere Auftraggeber sowie als Team Lead
-            Development in einer Digitalagentur.
+            Konstellationen gearbeitet: als{' '}
+            <em>Gründer und Geschäftsführer/CTO</em> in zwei Unternehmen, als{' '}
+            <em>Web-Entwickler</em> bei einer Designagentur, als{' '}
+            <em>Freelancer</em> für Agenturen und andere Auftraggeber sowie als{' '}
+            <em>Head of Development</em> in einer Digitalagentur.
           </p>
         </div>
         <div>
@@ -259,7 +260,7 @@ const CV: NextPage = () => {
               yearFrom={2010}
               employer="Fachhochschule Potsdam (FHP)"
               location="Fachbereich Design"
-              jobTitle="Lehrauftrag zum Thema „Mobile Web Apps“"
+              jobTitle="Lehrauftrag zum Thema „Mobile Web Apps“ im SS 2010"
             />
             <Job
               yearFrom={2010}

@@ -26,7 +26,8 @@ const CV: NextPage = () => {
             <br />
             Schillerstraße 1 · 13158 Berlin
             <br />
-            <a href="tel:+491795057388">+49 179 5057388</a>
+            <a href="tel:+491795057388">+49 179 5057388</a> ·{' '}
+            <a href="mailto:hi@pb.io">hi@pb.io</a>
           </p>
         </div>
         <div>
@@ -45,6 +46,75 @@ const CV: NextPage = () => {
             <dt className="font-bold all-small-caps">Englisch</dt>
             <dd className="col-span-2">fließend</dd>
           </dl>
+        </div>
+        <div>
+          <H1>Technologien &amp; Methoden</H1>
+          <ul className="text-lg children:inline-block children:mr-2 children:transition-all hover:children:scale-150 hover:children:bg-gray-600 hover:children:text-white children:rounded hover:children:mr-0 hover:children:px-1">
+            {[
+              { technology: 'HTML', url: 'https://html.spec.whatwg.org' },
+              { technology: 'CSS', url: 'https://www.w3.org/Style/CSS/' },
+              {
+                technology: 'JavaScript',
+                url: 'https://www.w3.org/standards/webdesign/script',
+              },
+              {
+                technology: 'TypeScript',
+                url: 'https://www.typescriptlang.org',
+              },
+              { technology: 'Python', url: 'https://www.python.org' },
+              { technology: 'Django', url: 'https://www.djangoproject.com' },
+              {
+                technology: 'REST',
+                url: 'https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm',
+              },
+              { technology: 'GraphQL', url: 'https://graphql.org' },
+              { technology: 'Ruby', url: 'https://www.ruby-lang.org/de/' },
+              { technology: 'Agile', url: 'https://agilemanifesto.org' },
+              { technology: 'Scrum', url: 'https://www.scrum.org' },
+              { technology: 'PostgreSQL', url: 'https://www.postgresql.org' },
+              {
+                technology: 'Ionic Framework',
+                url: 'https://ionicframework.com',
+              },
+              { technology: 'React', url: 'https://reactjs.org' },
+              { technology: 'Next.js', url: 'https://nextjs.org' },
+              { technology: 'Vue.js', url: 'https://vuejs.org' },
+              { technology: 'Docker', url: 'https://www.docker.com' },
+              { technology: 'Alpine.js', url: 'https://alpinejs.dev' },
+              { technology: 'Tailwind CSS', url: 'https://tailwindcss.com' },
+              { technology: 'Heroku', url: 'https://www.heroku.com' },
+              { technology: 'AWS', url: 'https://aws.amazon.com/' },
+              { technology: 'Azure', url: 'https://azure.microsoft.com/' },
+              { technology: 'Git', url: 'https://git-scm.com' },
+              { technology: 'Firebase', url: 'https://firebase.google.com' },
+              { technology: 'Prisma', url: 'https://www.prisma.io' },
+              { technology: 'SQLite', url: 'https://www.sqlite.org/' },
+              { technology: 'CouchDB', url: 'https://couchdb.apache.org' },
+              { technology: 'Flask', url: 'https://flask.palletsprojects.com' },
+              { technology: 'Linux', url: 'https://www.linux.org' },
+              { technology: 'Node.js', url: 'https://nodejs.org' },
+              {
+                technology: 'PWA',
+                url: 'https://web.dev/progressive-web-apps/',
+              },
+              { technology: 'Rails', url: 'https://rubyonrails.org' },
+              { technology: 'React Native', url: 'https://reactnative.dev' },
+              {
+                technology: 'Raspberry Pi',
+                url: 'https://www.raspberrypi.com',
+              },
+              { technology: 'Redux', url: 'https://redux.js.org' },
+              { technology: 'Sass', url: 'https://sass-lang.com' },
+              { technology: 'Terraform', url: 'https://www.terraform.io' },
+              { technology: 'Wagtail', url: 'https://wagtail.org' },
+            ]
+              .sort((a, b) => (a.technology > b.technology ? 1 : -1))
+              .map((t) => (
+                <li key={t.technology}>
+                  <a href={t.url}>{t.technology}</a>
+                </li>
+              ))}
+          </ul>
         </div>
       </section>
       <section className="flex-2 space-y-16">

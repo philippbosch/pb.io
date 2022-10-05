@@ -34,5 +34,8 @@ module.exports = {
         },
       });
     }),
+    plugin(({ addVariant }) => {
+      addVariant('children', '&>*');
+    }),
   ],
 };

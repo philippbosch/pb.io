@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import differenceInYears from 'date-fns/differenceInYears';
@@ -49,68 +50,141 @@ const CV: NextPage = () => {
         </div>
         <div>
           <H1>Technologien &amp; Methoden</H1>
-          <ul className="text-lg children:inline-block children:mr-2 children:transition-all hover:children:scale-150 hover:children:bg-gray-600 hover:children:text-white children:rounded hover:children:mr-0 hover:children:px-1">
+          <ul className="children:inline-block children:mr-2 children:transition-all hover:children:scale-150 hover:children:bg-gray-600 hover:children:text-white children:rounded hover:children:mr-0 hover:children:px-1">
             {[
-              { technology: 'HTML', url: 'https://html.spec.whatwg.org' },
-              { technology: 'CSS', url: 'https://www.w3.org/Style/CSS/' },
+              {
+                technology: 'HTML',
+                level: 3,
+                url: 'https://html.spec.whatwg.org',
+              },
+              {
+                technology: 'CSS',
+                level: 3,
+                url: 'https://www.w3.org/Style/CSS/',
+              },
               {
                 technology: 'JavaScript',
+                level: 3,
                 url: 'https://www.w3.org/standards/webdesign/script',
               },
               {
                 technology: 'TypeScript',
+                level: 3,
                 url: 'https://www.typescriptlang.org',
               },
-              { technology: 'Python', url: 'https://www.python.org' },
-              { technology: 'Django', url: 'https://www.djangoproject.com' },
+              { technology: 'Python', level: 3, url: 'https://www.python.org' },
+              {
+                technology: 'Django',
+                level: 3,
+                url: 'https://www.djangoproject.com',
+              },
               {
                 technology: 'REST',
+                level: 3,
                 url: 'https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm',
               },
-              { technology: 'GraphQL', url: 'https://graphql.org' },
-              { technology: 'Ruby', url: 'https://www.ruby-lang.org/de/' },
-              { technology: 'Agile', url: 'https://agilemanifesto.org' },
-              { technology: 'Scrum', url: 'https://www.scrum.org' },
-              { technology: 'PostgreSQL', url: 'https://www.postgresql.org' },
+              { technology: 'GraphQL', level: 1, url: 'https://graphql.org' },
+              {
+                technology: 'Ruby',
+                level: 1,
+                url: 'https://www.ruby-lang.org/de/',
+              },
+              {
+                technology: 'Agile',
+                level: 2,
+                url: 'https://agilemanifesto.org',
+              },
+              { technology: 'Scrum', level: 2, url: 'https://www.scrum.org' },
+              {
+                technology: 'PostgreSQL',
+                level: 2,
+                url: 'https://www.postgresql.org',
+              },
               {
                 technology: 'Ionic Framework',
+                level: 2,
                 url: 'https://ionicframework.com',
               },
-              { technology: 'React', url: 'https://reactjs.org' },
-              { technology: 'Next.js', url: 'https://nextjs.org' },
-              { technology: 'Vue.js', url: 'https://vuejs.org' },
-              { technology: 'Docker', url: 'https://www.docker.com' },
-              { technology: 'Alpine.js', url: 'https://alpinejs.dev' },
-              { technology: 'Tailwind CSS', url: 'https://tailwindcss.com' },
-              { technology: 'Heroku', url: 'https://www.heroku.com' },
-              { technology: 'AWS', url: 'https://aws.amazon.com/' },
-              { technology: 'Azure', url: 'https://azure.microsoft.com/' },
-              { technology: 'Git', url: 'https://git-scm.com' },
-              { technology: 'Firebase', url: 'https://firebase.google.com' },
-              { technology: 'Prisma', url: 'https://www.prisma.io' },
-              { technology: 'SQLite', url: 'https://www.sqlite.org/' },
-              { technology: 'CouchDB', url: 'https://couchdb.apache.org' },
-              { technology: 'Flask', url: 'https://flask.palletsprojects.com' },
-              { technology: 'Linux', url: 'https://www.linux.org' },
-              { technology: 'Node.js', url: 'https://nodejs.org' },
+              { technology: 'React', level: 3, url: 'https://reactjs.org' },
+              { technology: 'Next.js', level: 3, url: 'https://nextjs.org' },
+              { technology: 'Vue.js', level: 2, url: 'https://vuejs.org' },
+              { technology: 'Docker', level: 3, url: 'https://www.docker.com' },
+              {
+                technology: 'Alpine.js',
+                level: 3,
+                url: 'https://alpinejs.dev',
+              },
+              {
+                technology: 'Tailwind CSS',
+                level: 3,
+                url: 'https://tailwindcss.com',
+              },
+              { technology: 'Heroku', level: 2, url: 'https://www.heroku.com' },
+              { technology: 'AWS', level: 2, url: 'https://aws.amazon.com/' },
+              {
+                technology: 'Azure',
+                level: 1,
+                url: 'https://azure.microsoft.com/',
+              },
+              { technology: 'Git', level: 3, url: 'https://git-scm.com' },
+              {
+                technology: 'Firebase',
+                level: 2,
+                url: 'https://firebase.google.com',
+              },
+              { technology: 'Prisma', level: 1, url: 'https://www.prisma.io' },
+              {
+                technology: 'SQLite',
+                level: 2,
+                url: 'https://www.sqlite.org/',
+              },
+              {
+                technology: 'CouchDB',
+                level: 2,
+                url: 'https://couchdb.apache.org',
+              },
+              {
+                technology: 'Flask',
+                level: 2,
+                url: 'https://flask.palletsprojects.com',
+              },
+              { technology: 'Linux', level: 1, url: 'https://www.linux.org' },
+              { technology: 'Node.js', level: 2, url: 'https://nodejs.org' },
               {
                 technology: 'PWA',
+                level: 1,
                 url: 'https://web.dev/progressive-web-apps/',
               },
-              { technology: 'Rails', url: 'https://rubyonrails.org' },
-              { technology: 'React Native', url: 'https://reactnative.dev' },
+              { technology: 'Rails', level: 1, url: 'https://rubyonrails.org' },
+              {
+                technology: 'React Native',
+                level: 2,
+                url: 'https://reactnative.dev',
+              },
               {
                 technology: 'Raspberry Pi',
+                level: 1,
                 url: 'https://www.raspberrypi.com',
               },
-              { technology: 'Redux', url: 'https://redux.js.org' },
-              { technology: 'Sass', url: 'https://sass-lang.com' },
-              { technology: 'Terraform', url: 'https://www.terraform.io' },
-              { technology: 'Wagtail', url: 'https://wagtail.org' },
+              { technology: 'Redux', level: 2, url: 'https://redux.js.org' },
+              { technology: 'Sass', level: 2, url: 'https://sass-lang.com' },
+              {
+                technology: 'Terraform',
+                level: 2,
+                url: 'https://www.terraform.io',
+              },
+              { technology: 'Wagtail', level: 1, url: 'https://wagtail.org' },
             ]
               .sort((a, b) => (a.technology > b.technology ? 1 : -1))
               .map((t) => (
-                <li key={t.technology}>
+                <li
+                  key={t.technology}
+                  className={classNames({
+                    'text-sm text-gray-600': t.level === 1,
+                    'text-lg text-gray-500': t.level === 2,
+                    'text-2xl text-gray-400': t.level === 3,
+                  })}
+                >
                   <a href={t.url}>{t.technology}</a>
                 </li>
               ))}

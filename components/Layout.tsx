@@ -1,12 +1,11 @@
-import Image from "next/image";
-import profilePic from "../public/images/philipp-bosch.webp";
+import Image from 'next/image';
+import profilePic from '../public/images/philipp-bosch.webp';
 
 interface LayoutProps {
-  title?: string;
-  children: any;
+  children: React.ReactNode;
 }
 
-const Layout = ({ title, children }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="container mx-auto my-16 md:my-32 lg:my-48 px-8 md:px-16 space-y-24 lg:space-y-32 xl:space-y-48">
       <header className="flex items-center space-x-4 lg:space-x-8">

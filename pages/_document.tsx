@@ -1,4 +1,4 @@
-import { Head, Html, Main, NextScript } from "next/document";
+import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -19,7 +19,7 @@ export default function Document() {
           crossOrigin="anonymous"
         />
       </Head>
-      <body className="font-calluna text-gray-500 bg-gray-900 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 bg-fixed">
+      <body className="font-calluna text-gray-400 bg-gray-900 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 bg-fixed">
         <Main />
         <NextScript />
       </body>

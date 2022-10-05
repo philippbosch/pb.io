@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import H1 from '../components/H1';
 import Layout from '../components/Layout';
 
 const Home: NextPage = () => {
@@ -9,9 +10,7 @@ const Home: NextPage = () => {
         <title>Philipp Bosch &middot; Software Developer &middot; Berlin</title>
       </Head>
       <section className="space-y-4 flex-1">
-        <h1 className="text-2xl lg:text-3xl text-white">
-          Technologies &amp; Platforms
-        </h1>
+        <H1>Technologies &amp; Platforms</H1>
         <ul className="text-lg">
           {[
             'JavaScript / TypeScript',
@@ -26,7 +25,7 @@ const Home: NextPage = () => {
         </ul>
       </section>
       <section className="space-y-4 flex-1">
-        <h1 className="text-2xl lg:text-3xl text-white">Current Project</h1>
+        <H1>Current Project</H1>
         <a href="https://www.weg.plus/" className="block">
           <svg
             viewBox="0 0 1024 1024"
@@ -45,7 +44,7 @@ const Home: NextPage = () => {
             />
           </svg>
           <div>
-            <h2 className="text-2xl text-white">WEG+</h2>
+            <h2 className="text-xl text-white">WEG+</h2>
             <p className="hyphens-auto">
               Online platform for apartment owners and property managers to
               improve communication, transparency and efficiency within owners
@@ -58,9 +57,7 @@ const Home: NextPage = () => {
         </a>
       </section>
       <section className="space-y-4 flex-1">
-        <h1 className="text-2xl lg:text-3xl text-white">
-          Friends &amp; Network
-        </h1>
+        <H1>Friends &amp; Network</H1>
         <ul className="text-lg space-y-4 xl:space-y-0">
           {[
             [

@@ -14,6 +14,18 @@ const CV: NextPage = () => {
           Lebenslauf &middot; Philipp Bosch &middot; Software Developer &middot;
           Berlin
         </title>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pb.io/cv" />
+        <meta property="og:title" content="Lebenslauf · Philipp Bosch" />
+        <meta
+          property="og:description"
+          content="Philipp Bosch ist langjähriger Softwareentwickler mit Fokus auf Web und Mobile"
+        />
+        <meta
+          property="og:image"
+          content="https://pb.io/images/philipp-bosch.jpg"
+        />
+        <meta name="robots" content="noindex" />
       </Head>
       <section className="flex-1 space-y-16">
         <div>

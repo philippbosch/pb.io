@@ -83,7 +83,7 @@ const CV: NextPage = () => {
                 level: 3,
                 url: 'https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm',
               },
-              { technology: 'GraphQL', level: 1, url: 'https://graphql.org' },
+              { technology: 'GraphQL', level: 3, url: 'https://graphql.org' },
               {
                 technology: 'Ruby',
                 level: 1,

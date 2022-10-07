@@ -27,3 +27,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media print {
+  body {
+    width: 75vw;
+  }
+}

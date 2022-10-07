@@ -5,6 +5,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  webpack: function (config) {
+    config.module.rules.push({
+      test: /\.ya?ml$/i,
+      use: 'yaml-loader',
+    });
+    return config;
+  },
 };
 
 module.exports = nextConfig;

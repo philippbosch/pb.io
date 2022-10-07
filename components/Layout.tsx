@@ -7,17 +7,17 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="container mx-auto my-16 md:my-32 lg:my-48 px-8 md:px-16 space-y-24 lg:space-y-32 xl:space-y-48">
+    <div className="container mx-auto my-16 md:my-32 lg:my-48 print:!my-16 px-8 md:px-16 print:max-w-none space-y-24 lg:space-y-32 xl:space-y-48">
       <header className="flex items-center space-x-4 lg:space-x-8">
-        <div className="w-20 h-20 lg:w-36 lg:h-36 rounded-full border-2 lg:border-4 border-gray-100 overflow-hidden relative">
+        <div className="w-20 h-20 lg:w-36 lg:h-36 rounded-full border-2 lg:border-4 border-gray-100 print:border-gray-300 overflow-hidden relative">
           <Image src={profilePic} alt="Philipp Bosch" layout="fill" />
         </div>
 
         <div>
-          <h1 className="text-2xl lg:text-5xl font-bold text-white">
+          <h1 className="text-2xl lg:text-5xl font-bold text-white print:text-black">
             Philipp Bosch
           </h1>
-          <h2 className="-mt-1.5 lg:mt-0 text-2xl lg:text-5xl text-gray-400">
+          <h2 className="-mt-1.5 lg:mt-0 text-2xl lg:text-5xl text-gray-400 print:text-gray-500">
             Software Developer
           </h2>
           <div className="mt-2 flex text-sm lg:text-lg space-x-3 lg:space-x-6">
@@ -41,7 +41,7 @@ const Layout = ({ children }: LayoutProps) => {
             </div>
             <a
               href="https://github.com/philippbosch"
-              className="flex items-center space-x-1 hover:text-gray-300 transition"
+              className="flex items-center space-x-1 hover:text-gray-300 transition print:hidden"
               title="GitHub"
             >
               <svg

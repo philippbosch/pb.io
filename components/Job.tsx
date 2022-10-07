@@ -29,7 +29,10 @@ const Job = ({
     <div className="col-span-5 space-y-2">
       <div>
         <h2 className="text-xl">
-          <span className="text-white font-bold">{employer}</span> {location}
+          <span className="text-white print:text-black font-bold">
+            {employer}
+          </span>{' '}
+          {location}
         </h2>
         <div>
           {jobTitle}{' '}
@@ -43,7 +46,7 @@ const Job = ({
 
       {focus ? (
         <div>
-          <h3 className="text-gray-300 all-small-caps font-bold tracking-wider">
+          <h3 className="text-gray-300 print:text-black all-small-caps font-bold tracking-wider">
             Schwerpunkte
           </h3>
           <p>{focus}</p>
@@ -52,7 +55,7 @@ const Job = ({
 
       {clients ? (
         <div>
-          <h3 className="text-gray-300 all-small-caps font-bold tracking-wider">
+          <h3 className="text-gray-300 print:text-black all-small-caps font-bold tracking-wider">
             Auftraggeber (Auswahl)
           </h3>
           <p>{clients}</p>
@@ -61,7 +64,7 @@ const Job = ({
 
       {technologies ? (
         <div>
-          <h3 className="text-gray-300 all-small-caps font-bold tracking-wider">
+          <h3 className="text-gray-300 print:text-black all-small-caps font-bold tracking-wider">
             Technologien
           </h3>
           <p>{technologies}</p>

@@ -8,6 +8,20 @@ const Home: NextPage = () => {
     <Layout>
       <Head>
         <title>Philipp Bosch &middot; Software Developer &middot; Berlin</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pb.io" />
+        <meta
+          property="og:title"
+          content="Philipp Bosch &middot; Software Developer &middot; Berlin"
+        />
+        <meta
+          property="og:description"
+          content="Philipp Bosch is a software developer for all things web &amp; mobile"
+        />
+        <meta
+          property="og:image"
+          content="https://pb.io/images/philipp-bosch.jpg"
+        />
       </Head>
       <section className="space-y-4 flex-1">
         <H1>Technologies &amp; Platforms</H1>

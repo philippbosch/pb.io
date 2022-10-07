@@ -124,3 +124,9 @@
 - technology: Graphene
   level: 2
   url: https://graphene-python.org
+- technology: Redis
+  level: 1
+  url: https://redis.io
+- technology: Dato CMS
+  level: 2
+  url: https://www.datocms.com

@@ -140,7 +140,7 @@ const CV: NextPage = () => {
             />
             <Job
               yearFrom={2019}
-              yearTo={2022}
+              yearTo="jetzt"
               employer="paeljo GmbH"
               location="Berlin"
               jobTitle="Gründer &amp; Geschäftsführer/CTO"

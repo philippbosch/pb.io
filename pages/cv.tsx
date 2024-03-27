@@ -148,6 +148,16 @@ const CV: NextPage = () => {
               focus="Entwicklung und Vertrieb von WEG+, einer Softwarelösung für Wohnungseigentümergemeinschaften (WEG). "
               technologies="Python/Django, PostgreSQL, JavaScript, AlpineJS, React, Next.js, Ionic Framework, GraphQL, Tailwind CSS, Heroku, AWS, etc."
             />
+            <Job
+              yearFrom={2023}
+              yearTo={2024}
+              employer="Selfmade Energy"
+              location="Berlin"
+              jobTitle="Senior Full-Stack Developer"
+              url="https://www.selfmade-energy.com/"
+              focus="Weiterentwicklung der Vergleichsplattform für Solaranlagen"
+              technologies="Django, Next.js, Tailwind CSS, AWS, Docker, Terraform"
+            />
           </div>
         </div>
 

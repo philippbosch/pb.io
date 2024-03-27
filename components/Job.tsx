@@ -1,6 +1,6 @@
 interface JobProps {
   yearFrom: number;
-  yearTo?: number;
+  yearTo?: number | string;
   employer: string;
   location: string;
   jobTitle: string;

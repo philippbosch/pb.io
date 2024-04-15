@@ -3,7 +3,7 @@ interface H1Props {
 }
 
 const H1 = ({ children }: H1Props) => (
-  <h1 className="text-2xl lg:text-3xl text-white print:text-black mb-2">
+  <h1 className="text-2xl lg:text-3xl text-white print:text-black">
     {children}
   </h1>
 );

@@ -25,12 +25,6 @@
 - technology: Ruby
   level: 1
   url: https://www.ruby-lang.org/de/
-- technology: Agile
-  level: 2
-  url: https://agilemanifesto.org
-- technology: Scrum
-  level: 2
-  url: https://www.scrum.org
 - technology: PostgreSQL
   level: 2
   url: https://www.postgresql.org
@@ -142,3 +136,9 @@
 - technology: Zapier
   level: 2
   url: https://zapier.com
+- technology: ChatGPT
+  level: 3
+  url: https://chat.openai.com
+- technology: OpenAI
+  level: 2
+  url: https://www.openai.com

@@ -2,7 +2,7 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="de">
       <Head>
         <link
           rel="preload"
@@ -14,6 +14,13 @@ export default function Document() {
         <link
           rel="preload"
           href="/fonts/callunasansbold-webfont.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/callunasansitalic-webfont.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"

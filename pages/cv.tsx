@@ -9,6 +9,8 @@ import Layout from '../components/Layout';
 import Job from '../components/Job';
 import skills from '../data/skills.yaml';
 import type { Skill } from '../types/skill';
+import P from '../components/P';
+import Section from '../components/Section';
 
 const CV: NextPage = () => {
   return (
@@ -32,7 +34,7 @@ const CV: NextPage = () => {
         <meta name="robots" content="noindex" />
       </Head>
       <aside className="flex-1 space-y-16">
-        <div>
+        <Section>
           <H1>Persönliche Daten</H1>
           <p className="text-lg">
             * 3. Mai 1979 
@@ -46,16 +48,16 @@ const CV: NextPage = () => {
             <a href="tel:+491795057388">+49 179 5057388</a> ·{' '}
             <a href="mailto:hi@pb.io">hi@pb.io</a>
           </p>
-        </div>
-        <div>
+        </Section>
+        <Section>
           <H1>Schulbildung</H1>
           <p className="text-lg">
             Clara-Schumann-Gymnasium, Bonn
             <br />
             Abitur 1998
           </p>
-        </div>
-        <div>
+        </Section>
+        <Section>
           <H1>Sprachen</H1>
           <dl className="grid grid-cols-3 text-lg">
             <dt className="font-bold all-small-caps">Deutsch</dt>
@@ -63,9 +65,9 @@ const CV: NextPage = () => {
             <dt className="font-bold all-small-caps">Englisch</dt>
             <dd className="col-span-2">fließend</dd>
           </dl>
-        </div>
-        <div>
-          <H1>Technologien &amp; Methoden</H1>
+        </Section>
+        <Section>
+          <H1>Technologien</H1>
           <ul className="-mx-1.5 inline-flex flex-wrap gap-x-2 items-baseline children:px-1.5 children:py-3 children:leading-[0.5rem] children:transition-all hover:children:scale-150 hover:children:bg-white/10 hover:children:text-white hover:children:rounded hover:children:backdrop-blur-[2px]">
             {skills
               .sort((a: Skill, b: Skill) =>
@@ -88,22 +90,70 @@ const CV: NextPage = () => {
                 </li>
               ))}
           </ul>
-        </div>
+        </Section>
       </aside>
-      <main className="flex-2 space-y-16">
-        <section>
+      <main className="flex-2 space-y-16 [&_em]:text-gray-200">
+        <Section>
           <H1>Profil</H1>
-          <p className="text-lg hyphens-auto sm:hyphens-none">
-            Ich bin seit mehr als 20 Jahren Softwareentwickler und vorwiegend im
+          <P>
+            Seit mehr als 20 Jahren bin ich Softwareentwickler und vorwiegend im
             Bereich Web &amp; Mobile tätig. Dabei habe ich in verschiedenen
             Konstellationen gearbeitet: als{' '}
             <em>Gründer und Geschäftsführer/CTO</em> in zwei Unternehmen, als{' '}
             <em>Web-Entwickler</em> bei einer Designagentur, als{' '}
             <em>Freelancer</em> für Agenturen und andere Auftraggeber sowie als{' '}
             <em>Head of Development</em> in einer Digitalagentur.
-          </p>
-        </section>
-        <section>
+          </P>
+        </Section>
+        <Section>
+          <H1>Schwerpunkte</H1>
+          <P>
+            Ich verfüge über einen breiten Erfahrungsschatz in der Entwicklung
+            von Websites und Applikationen. Meine bevorzugten Technologien sind
+            dabei <em>Python/Django</em> und <em>TypeScript/React/Next.js</em>.
+            Aktuell beschäftige ich mich außerdem intensiver mit der Erstellung
+            von nativen Apps für iOS und Android mit <em>React Native</em> bzw.{' '}
+            <em>Expo</em> sowie mit.
+          </P>
+          <P>
+            Grundsätzlich liegen meine Interessen in der Arbeit mit Daten und
+            Schnittstellen/APIs sowie der Optimierung und Automatisierung von
+            Prozessen.
+          </P>
+        </Section>
+        <Section>
+          <H1>Philosphie</H1>
+          <P>
+            Ich sehe mich selber als pragmatischen Entwickler. Wenn es darum
+            geht, den effizientesten Algorithmus für ein hochtheoretisches
+            informatisches Problem zu finden, dann bin ich eher nicht der
+            richtige für die Aufgabe. Meine Stärken liegen vielmehr darin, ein
+            Problem oder eine Aufgabe zu erfassen, die Anforderungen zu
+            verstehen, die richtigen Fragen zu stellen, einen Lösungsansatz und
+            passende Technologien zu finden, und eine Lösung zu entwickeln.
+          </P>
+        </Section>
+        <Section>
+          <H1>Arbeitsweise</H1>
+          <P>
+            Ich bin ein Teamplayer und arbeite gerne in interdisziplinären
+            Teams. Ich schätze den Austausch mit Kolleg·innen und bin offen für
+            neue Ideen und Perspektiven. Ich kann mich gut in bestehende
+            Projekte und Teams einfinden und mich schnell in neue Technologien
+            und Frameworks einarbeiten.
+          </P>
+          <P>
+            Aufgrund meiner Berufserfahrung kann ich auch unternehmerisch
+            denken. Ich verstehe, dass jedes technische Problem auch einen
+            Geschäftskontext hat und dass die beste technische Lösung nicht
+            immer die beste Lösung für das Unternehmen ist. Darüber hinaus habe
+            ich ein großes Interesse und gutes Verständnis für Design. Ich kann
+            Designanforderungen verstehen und umsetzen und arbeite gerne eng mit
+            Designer·innen zusammen, um die bestmögliche Erfahrung für die
+            Benutzer·innen zu schaffen.
+          </P>
+        </Section>
+        <Section>
           <H1>Berufserfahrung</H1>
           <div className="space-y-8">
             <Job
@@ -136,7 +186,7 @@ const CV: NextPage = () => {
               jobTitle="Head of Development"
               url="https://www.acolorbright.com/"
               focus="Entwicklung von Websites und Web-Applikationen"
-              clients="Red Bull, H&amp;M, Ableton, AnyDesk, Elsewhere Brooklyn"
+              clients="Red Bull, H&amp;M, Ableton, Haufe Verlag, Elsewhere Brooklyn"
               technologies="Python/Django, JavaScript, React, AngularJS, Ruby/Rails, PHP, Docker, etc."
             />
             <Job
@@ -160,9 +210,9 @@ const CV: NextPage = () => {
               technologies="Django, Next.js, Tailwind CSS, AWS, Docker, Terraform"
             />
           </div>
-        </section>
+        </Section>
 
-        <section>
+        <Section>
           <H1>Sonstige Tätigkeiten</H1>
           <div className="space-y-8">
             <Job
@@ -185,7 +235,7 @@ const CV: NextPage = () => {
               jobTitle="Workshop zum Thema „Things, Phones and Spaces“ im Rahmen des Masterstudiengangs „Interaction Design“ von Gillian Crampton Smith und Philip Tabor"
             />
           </div>
-        </section>
+        </Section>
       </main>
     </Layout>
   );

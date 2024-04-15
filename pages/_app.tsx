@@ -4,7 +4,7 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <PlausibleProvider domain="pb.io" customDomain="https://tock.weg.plus">
+    <PlausibleProvider domain="pb.io">
       <Component {...pageProps} />
     </PlausibleProvider>
   );

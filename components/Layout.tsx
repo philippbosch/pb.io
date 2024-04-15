@@ -9,7 +9,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="container mx-auto py-16 md:py-32 lg:py-48 print:!py-16 px-8 md:px-16 print:max-w-none space-y-24 lg:space-y-32 xl:space-y-48">
       <header className="flex items-center space-x-4 lg:space-x-8">
-        <div className="w-20 h-20 lg:w-36 lg:h-36 rounded-full border-2 lg:border-4 border-gray-100 print:border-gray-300 overflow-hidden relative">
+        <div className="w-20 h-20 lg:w-36 lg:h-36 rounded-full border-2 lg:border-4 border-gray-100 print:border-gray-300 overflow-hidden relative shrink-0">
           <Image src={profilePic} alt="Philipp Bosch" layout="fill" />
         </div>
 

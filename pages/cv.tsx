@@ -36,7 +36,7 @@ const CV: NextPage = () => {
       <aside className="flex-1 space-y-16">
         <Section>
           <H1>Persönliche Daten</H1>
-          <p className="text-lg">
+          <P>
             * 3. Mai 1979 
             <span className="text-gray-500">
               ({differenceInYears(Date.now(), new Date('1979-05-03T13:34:00'))})
@@ -47,19 +47,19 @@ const CV: NextPage = () => {
             <br />
             <a href="tel:+491795057388">+49 179 5057388</a> ·{' '}
             <a href="mailto:hi@pb.io">hi@pb.io</a>
-          </p>
+          </P>
         </Section>
         <Section>
           <H1>Schulbildung</H1>
-          <p className="text-lg">
+          <P>
             Clara-Schumann-Gymnasium, Bonn
             <br />
             Abitur 1998
-          </p>
+          </P>
         </Section>
         <Section>
           <H1>Sprachen</H1>
-          <dl className="grid grid-cols-3 text-lg">
+          <dl className="grid grid-cols-3 text-lg lg:text-xl lg:leading-8">
             <dt className="font-bold all-small-caps">Deutsch</dt>
             <dd className="col-span-2">Muttersprache</dd>
             <dt className="font-bold all-small-caps">Englisch</dt>
@@ -155,7 +155,7 @@ const CV: NextPage = () => {
         </Section>
         <Section>
           <H1>Berufserfahrung</H1>
-          <div className="space-y-8">
+          <div className="flex flex-col gap-8">
             <Job
               yearFrom={1997}
               yearTo={2008}

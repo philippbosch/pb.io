@@ -3,7 +3,7 @@ interface SectionProps {
 }
 
 const Section = ({ children }: SectionProps) => (
-  <section className="flex flex-col gap-2">{children}</section>
+  <section className="flex flex-col gap-4">{children}</section>
 );
 
 export default Section;

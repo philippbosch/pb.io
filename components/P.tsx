@@ -3,7 +3,9 @@ interface PProps {
 }
 
 const P = ({ children }: PProps) => (
-  <p className="text-lg hyphens-auto _sm:hyphens-none">{children}</p>
+  <p className="text-lg lg:text-xl lg:leading-8 hyphens-auto sm:hyphens-none">
+    {children}
+  </p>
 );
 
 export default P;

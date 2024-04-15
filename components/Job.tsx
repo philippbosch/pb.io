@@ -1,3 +1,7 @@
+import H2 from './H2';
+import H3 from './H3';
+import P from './P';
+
 interface JobProps {
   yearFrom: number;
   yearTo?: number | string;
@@ -24,17 +28,17 @@ const Job = ({
   <div className="sm:grid grid-cols-6">
     <div className="text-xl">
       {yearFrom}
-      {yearTo ? <>-{yearTo}</> : null}
+      {yearTo ? <> – {yearTo}</> : null}
     </div>
     <div className="col-span-5 space-y-2">
       <div>
-        <h2 className="text-xl">
+        <H2>
           <span className="text-white print:text-black font-bold">
             {employer}
           </span>{' '}
           {location}
-        </h2>
-        <div>
+        </H2>
+        <P>
           {jobTitle}{' '}
           {url ? (
             <>
@@ -44,33 +48,27 @@ const Job = ({
               </a>
             </>
           ) : null}
-        </div>
+        </P>
       </div>
 
       {focus ? (
         <div>
-          <h3 className="text-gray-300 print:text-black all-small-caps font-bold tracking-wider">
-            Schwerpunkte
-          </h3>
-          <p>{focus}</p>
+          <H3>Schwerpunkte</H3>
+          <P>{focus}</P>
         </div>
       ) : null}
 
       {clients ? (
         <div>
-          <h3 className="text-gray-300 print:text-black all-small-caps font-bold tracking-wider">
-            Auftraggeber (Auswahl)
-          </h3>
-          <p>{clients}</p>
+          <H3>Auftraggeber (Auswahl)</H3>
+          <P>{clients}</P>
         </div>
       ) : null}
 
       {technologies ? (
         <div>
-          <h3 className="text-gray-300 print:text-black all-small-caps font-bold tracking-wider">
-            Technologien
-          </h3>
-          <p>{technologies}</p>
+          <H3>Technologien</H3>
+          <P>{technologies}</P>
         </div>
       ) : null}
     </div>

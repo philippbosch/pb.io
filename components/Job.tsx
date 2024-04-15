@@ -38,7 +38,10 @@ const Job = ({
           {jobTitle}{' '}
           {url ? (
             <>
-              &middot; <a href={url}>{new URL(url).host}</a>
+              &middot;{' '}
+              <a href={url} className="hover:underline hover:text-white">
+                {new URL(url).host}
+              </a>
             </>
           ) : null}
         </div>

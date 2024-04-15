@@ -14,7 +14,7 @@
   level: 3
   url: https://www.python.org
 - technology: Django
-  level: 3
+  level: 4
   url: https://www.djangoproject.com
 - technology: REST
   level: 3
@@ -34,14 +34,14 @@
 - technology: PostgreSQL
   level: 2
   url: https://www.postgresql.org
-- technology: Ionic Framework
+- technology: Ionic
   level: 2
   url: https://ionicframework.com
 - technology: React
-  level: 3
+  level: 4
   url: https://reactjs.org
 - technology: Next.js
-  level: 3
+  level: 4
   url: https://nextjs.org
 - technology: Vue.js
   level: 2
@@ -53,7 +53,7 @@
   level: 3
   url: https://alpinejs.dev
 - technology: Tailwind CSS
-  level: 3
+  level: 4
   url: https://tailwindcss.com
 - technology: Heroku
   level: 2
@@ -83,7 +83,7 @@
   level: 2
   url: https://flask.palletsprojects.com
 - technology: Linux
-  level: 1
+  level: 2
   url: https://www.linux.org
 - technology: Node.js
   level: 2
@@ -95,7 +95,7 @@
   level: 1
   url: https://rubyonrails.org
 - technology: React Native
-  level: 2
+  level: 3
   url: https://reactnative.dev
 - technology: Raspberry Pi
   level: 1
@@ -130,3 +130,15 @@
 - technology: Dato CMS
   level: 2
   url: https://www.datocms.com
+- technology: Expo
+  level: 3
+  url: https://expo.dev
+- technology: Tiptap
+  level: 2
+  url: https://www.tiptap.dev
+- technology: Severless
+  level: 2
+  url: https://www.serverless.com
+- technology: Zapier
+  level: 2
+  url: https://zapier.com

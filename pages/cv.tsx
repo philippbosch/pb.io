@@ -66,7 +66,7 @@ const CV: NextPage = () => {
         </div>
         <div>
           <H1>Technologien &amp; Methoden</H1>
-          <ul className="children:inline-block children:mr-2 children:transition-all hover:children:scale-150 hover:children:bg-gray-600 hover:children:text-white children:rounded hover:children:mr-0 hover:children:px-1">
+          <ul className="-mx-1.5 inline-flex flex-wrap gap-x-2 items-baseline children:px-1.5 children:py-3 children:leading-[0.5rem] children:transition-all hover:children:scale-150 hover:children:bg-white/10 hover:children:text-white hover:children:rounded hover:children:backdrop-blur-[2px]">
             {skills
               .sort((a: Skill, b: Skill) =>
                 a.technology > b.technology ? 1 : -1
@@ -79,6 +79,7 @@ const CV: NextPage = () => {
                       'text-sm text-gray-600': t.level === 1,
                       'text-lg text-gray-500': t.level === 2,
                       'text-2xl text-gray-400': t.level === 3,
+                      'text-3xl text-gray-300': t.level === 4,
                     },
                     'print:text-black'
                   )}
@@ -155,7 +156,7 @@ const CV: NextPage = () => {
               location="Berlin"
               jobTitle="Senior Full-Stack Developer"
               url="https://www.selfmade-energy.com/"
-              focus="Weiterentwicklung der Vergleichsplattform für Solaranlagen"
+              focus="Weiterentwicklung der Vergleichsplattform für Solaranlagen und Wärmepumpen"
               technologies="Django, Next.js, Tailwind CSS, AWS, Docker, Terraform"
             />
           </div>

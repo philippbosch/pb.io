@@ -31,7 +31,7 @@ const CV: NextPage = () => {
         />
         <meta name="robots" content="noindex" />
       </Head>
-      <section className="flex-1 space-y-16">
+      <aside className="flex-1 space-y-16">
         <div>
           <H1>Persönliche Daten</H1>
           <p className="text-lg">
@@ -89,9 +89,9 @@ const CV: NextPage = () => {
               ))}
           </ul>
         </div>
-      </section>
-      <section className="flex-2 space-y-16">
-        <div>
+      </aside>
+      <main className="flex-2 space-y-16">
+        <section>
           <H1>Profil</H1>
           <p className="text-lg hyphens-auto sm:hyphens-none">
             Ich bin seit mehr als 20 Jahren Softwareentwickler und vorwiegend im
@@ -102,8 +102,8 @@ const CV: NextPage = () => {
             <em>Freelancer</em> für Agenturen und andere Auftraggeber sowie als{' '}
             <em>Head of Development</em> in einer Digitalagentur.
           </p>
-        </div>
-        <div>
+        </section>
+        <section>
           <H1>Berufserfahrung</H1>
           <div className="space-y-8">
             <Job
@@ -160,9 +160,9 @@ const CV: NextPage = () => {
               technologies="Django, Next.js, Tailwind CSS, AWS, Docker, Terraform"
             />
           </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
           <H1>Sonstige Tätigkeiten</H1>
           <div className="space-y-8">
             <Job
@@ -185,8 +185,8 @@ const CV: NextPage = () => {
               jobTitle="Workshop zum Thema „Things, Phones and Spaces“ im Rahmen des Masterstudiengangs „Interaction Design“ von Gillian Crampton Smith und Philip Tabor"
             />
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
     </Layout>
   );
 };

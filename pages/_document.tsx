@@ -2,7 +2,10 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="de">
+    <Html
+      lang="de"
+      className="bg-gray-900 after:bg-gray-900 after:fixed after:bg-cover after:bg-fixed after:inset-0 after:-z-10 after:opacity-[0.15] after:blur-3xl after:grayscale print:after:bg-white print:after:bg-none"
+    >
       <Head>
         <link
           rel="preload"
@@ -27,9 +30,9 @@ export default function Document() {
         />
         <meta name="theme-color" content="#1c1917" />
       </Head>
-      <body className="font-calluna text-gray-400 print:text-black bg-gray-900 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 bg-fixed print:bg-white print:bg-none">
-        <Main />
+      <body className="font-calluna text-gray-400 print:text-black print:bg-white print:bg-none">
         <NextScript />
+        <Main />
       </body>
     </Html>
   );

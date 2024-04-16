@@ -104,7 +104,7 @@ const CV: NextPage = () => {
             dabei <em>Python/Django</em> und <em>TypeScript/React/Next.js</em>.
             Aktuell beschäftige ich mich außerdem intensiver mit der Erstellung
             von nativen Apps für iOS und Android mit <em>React Native</em> bzw.{' '}
-            <em>Expo</em> sowie mit.
+            <em>Expo</em>.
           </P>
           <P>
             Grundsätzlich liegen meine Interessen in der Arbeit mit Daten und

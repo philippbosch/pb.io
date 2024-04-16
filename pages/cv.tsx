@@ -11,6 +11,7 @@ import skills from '../data/skills.yaml';
 import type { Skill } from '../types/skill';
 import P from '../components/P';
 import Section from '../components/Section';
+import A from '../components/A';
 
 const CV: NextPage = () => {
   return (
@@ -37,24 +38,12 @@ const CV: NextPage = () => {
         <Section>
           <H1>Persönliche Daten</H1>
           <P>
-            * 3. Mai 1979 
-            <span className="text-gray-500">
-              ({differenceInYears(Date.now(), new Date('1979-05-03T13:34:00'))})
-            </span>
-             in Bonn
+            * 1979 in Bonn
             <br />
-            Schillerstraße 1 · 13158 Berlin
+            seit 2006 in Berlin
             <br />
-            <a href="tel:+491795057388">+49 179 5057388</a> ·{' '}
-            <a href="mailto:hi@pb.io">hi@pb.io</a>
-          </P>
-        </Section>
-        <Section>
-          <H1>Schulbildung</H1>
-          <P>
-            Clara-Schumann-Gymnasium, Bonn
+            seit 2015 in Berlin-Pankow
             <br />
-            Abitur 1998
           </P>
         </Section>
         <Section>
@@ -81,7 +70,7 @@ const CV: NextPage = () => {
                       'text-sm text-gray-600': t.level === 1,
                       'text-lg text-gray-500': t.level === 2,
                       'text-2xl text-gray-400': t.level === 3,
-                      'text-3xl text-gray-300': t.level === 4,
+                      'text-3xl text-gray-200': t.level === 4,
                     },
                     'print:text-black'
                   )}
@@ -99,10 +88,12 @@ const CV: NextPage = () => {
             Seit mehr als 20 Jahren bin ich Softwareentwickler und vorwiegend im
             Bereich Web &amp; Mobile tätig. Dabei habe ich in verschiedenen
             Konstellationen gearbeitet: als{' '}
-            <em>Gründer und Geschäftsführer/CTO</em> in zwei Unternehmen, als{' '}
-            <em>Web-Entwickler</em> bei einer Designagentur, als{' '}
-            <em>Freelancer</em> für Agenturen und andere Auftraggeber sowie als{' '}
-            <em>Head of Development</em> in einer Digitalagentur.
+            <em>Gründer und Geschäftsführer/CTO</em> in zwei Unternehmen (
+            <A href="https://www.webfactory.de/">das erste</A> bereits zu
+            Schulzeiten gegründet), als <em>Web-Entwickler</em> bei einer
+            Designagentur, als <em>Freelancer</em> für Agenturen und andere
+            Auftraggeber sowie als <em>Head of Development</em> in einer
+            Digitalagentur.
           </P>
         </Section>
         <Section>
@@ -125,12 +116,12 @@ const CV: NextPage = () => {
           <H1>Philosphie</H1>
           <P>
             Ich sehe mich selber als pragmatischen Entwickler. Wenn es darum
-            geht, den effizientesten Algorithmus für ein hochtheoretisches
-            informatisches Problem zu finden, dann bin ich eher nicht der
-            richtige für die Aufgabe. Meine Stärken liegen vielmehr darin, ein
-            Problem oder eine Aufgabe zu erfassen, die Anforderungen zu
-            verstehen, die richtigen Fragen zu stellen, einen Lösungsansatz und
-            passende Technologien zu finden, und eine Lösung zu entwickeln.
+            geht, den effizientesten Algorithmus für ein Problem zu finden, dann
+            bin ich eher nicht der richtige für die Aufgabe. Meine Stärken
+            liegen vielmehr darin, ein Problem oder eine Aufgabe präzise zu
+            erfassen, die Anforderungen zu verstehen, die richtigen Fragen zu
+            stellen, geeignete Strategien und passende Technologien zu finden,
+            und schließlich eine Lösung zu entwickeln.
           </P>
         </Section>
         <Section>
@@ -197,7 +188,7 @@ const CV: NextPage = () => {
               jobTitle="Gründer &amp; Geschäftsführer/CTO"
               url="https://www.paeljo.de/"
               focus="Entwicklung und Vertrieb von WEG+, einer Softwarelösung für Wohnungseigentümergemeinschaften (WEG). "
-              technologies="Python/Django, PostgreSQL, JavaScript, AlpineJS, React, Next.js, Ionic Framework, GraphQL, Tailwind CSS, Heroku, AWS, etc."
+              technologies="Python/Django, PostgreSQL, Django REST Framework, JavaScript, AlpineJS, React, Next.js, Ionic Framework, React Native, GraphQL, Tailwind CSS, Heroku, AWS, etc."
             />
             <Job
               yearFrom={2023}
@@ -207,7 +198,7 @@ const CV: NextPage = () => {
               jobTitle="Senior Full-Stack Developer"
               url="https://www.selfmade-energy.com/"
               focus="Weiterentwicklung der Vergleichsplattform für Solaranlagen und Wärmepumpen"
-              technologies="Django, Next.js, Tailwind CSS, AWS, Docker, Terraform"
+              technologies="Python/Django, Django REST Framework, TypeScript, Next.js, Tailwind CSS, AWS, Docker, Terraform"
             />
           </div>
         </Section>
@@ -235,6 +226,15 @@ const CV: NextPage = () => {
               jobTitle="Workshop zum Thema „Things, Phones and Spaces“ im Rahmen des Masterstudiengangs „Interaction Design“ von Gillian Crampton Smith und Philip Tabor"
             />
           </div>
+        </Section>
+        <Section>
+          <H1>Persönliches</H1>
+          <P>
+            Ich lebe mit Frau, Kind und Katze im Norden von Berlin. Abseits des
+            Computers bin ich gerne in der Küche, meiner kleinen Holzwerkstatt
+            oder der Brandenburger Natur. Ich bin seit über 15 Jahren Vegetarier
+            und habe ein laut meiner Tochter übertriebenes Faible für Käse.
+          </P>
         </Section>
       </main>
     </Layout>

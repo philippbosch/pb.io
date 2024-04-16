@@ -1,3 +1,4 @@
+import A from './A';
 import H2 from './H2';
 import H3 from './H3';
 import P from './P';
@@ -42,10 +43,7 @@ const Job = ({
           {jobTitle}{' '}
           {url ? (
             <>
-              &middot;{' '}
-              <a href={url} className="hover:underline hover:text-white">
-                {new URL(url).host}
-              </a>
+              &middot; <A href={url}>{new URL(url).host}</A>
             </>
           ) : null}
         </P>

@@ -40,7 +40,7 @@ const Home: NextPage = () => {
       </section>
       <section className="space-y-4 flex-1">
         <H1>Current Project</H1>
-        <a href="https://www.weg.plus/" className="block">
+        <a href="https://www.weg.plus/?ref=pb.io" className="block">
           <svg
             viewBox="0 0 1024 1024"
             xmlns="http://www.w3.org/2000/svg"

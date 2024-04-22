@@ -186,7 +186,7 @@ const CV: NextPage = () => {
               employer="paeljo GmbH"
               location="Berlin"
               jobTitle="Gründer &amp; Geschäftsführer/CTO"
-              url="https://www.paeljo.de/"
+              url="https://www.paeljo.de/?ref=pb-cv"
               focus="Entwicklung und Vertrieb von WEG+, einer Softwarelösung für Wohnungseigentümergemeinschaften (WEG). "
               technologies="Python/Django, PostgreSQL, Django REST Framework, JavaScript, AlpineJS, React, Next.js, Ionic Framework, React Native, GraphQL, Tailwind CSS, Heroku, AWS, etc."
             />

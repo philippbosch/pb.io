@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html
       lang="de"
-      className="bg-gray-900 after:bg-gray-900 after:fixed after:bg-cover after:bg-fixed after:inset-0 after:-z-10 after:opacity-[0.15] after:blur-3xl after:grayscale print:after:bg-white print:after:bg-none"
+      className="bg-gray-900 bg-fixed print:bg-none"
     >
       <Head>
         <link
